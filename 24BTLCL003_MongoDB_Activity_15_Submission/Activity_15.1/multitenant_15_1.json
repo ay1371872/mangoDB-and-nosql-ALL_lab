@@ -1,0 +1,38 @@
+[
+  {
+    "tenant_id": "ORG-ALPHA",
+    "sku": "ITEM-101",
+    "name": "Alpha Custom Widget",
+    "price": 450.0,
+    "_id": {
+      "$oid": "6afca57f081a1ca98511153f"
+    }
+  },
+  {
+    "tenant_id": "ORG-ALPHA",
+    "sku": "ITEM-102",
+    "name": "Alpha Analytics Pro",
+    "price": 1200.0,
+    "_id": {
+      "$oid": "6afca57f081a1ca985111540"
+    }
+  },
+  {
+    "tenant_id": "ORG-BETA",
+    "sku": "ITEM-201",
+    "name": "Beta Cloud Gateway",
+    "price": 850.0,
+    "_id": {
+      "$oid": "6afca57f081a1ca985111541"
+    }
+  },
+  {
+    "tenant_id": "ORG-GAMMA",
+    "sku": "ITEM-301",
+    "name": "Gamma Security Suite",
+    "price": 2400.0,
+    "_id": {
+      "$oid": "6afca57f081a1ca985111542"
+    }
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "cart_id": "CART-101",
+    "sku": "PHONE-PRO",
+    "qty": 1,
+    "expires_in_s": 900,
+    "status": "HOLD",
+    "_id": {
+      "$oid": "6afca4b13434e187ba0a6beb"
+    }
+  },
+  {
+    "cart_id": "CART-102",
+    "sku": "PHONE-PRO",
+    "qty": 1,
+    "expires_in_s": 0,
+    "status": "EXPIRED_RELEASED",
+    "_id": {
+      "$oid": "6afca4b13434e187ba0a6bec"
+    }
+  }
+]

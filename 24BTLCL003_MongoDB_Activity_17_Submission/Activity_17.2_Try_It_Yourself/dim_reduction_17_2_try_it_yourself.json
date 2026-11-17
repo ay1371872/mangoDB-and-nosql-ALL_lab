@@ -1,0 +1,22 @@
+[
+  {
+    "dimensions": 1536,
+    "model": "text-embedding-3-large",
+    "ram_gb_per_million": 6.14,
+    "latency_ms": 3.8,
+    "accuracy": "100.0% (Reference)",
+    "_id": {
+      "$oid": "6afca638fb9a70cf7bc065d7"
+    }
+  },
+  {
+    "dimensions": 384,
+    "model": "all-MiniLM-L6-v2",
+    "ram_gb_per_million": 1.54,
+    "latency_ms": 1.1,
+    "accuracy": "96.4% (75% RAM savings)",
+    "_id": {
+      "$oid": "6afca638fb9a70cf7bc065d8"
+    }
+  }
+]

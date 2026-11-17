@@ -1,0 +1,29 @@
+[
+  {
+    "tenant_id": "TNT-A",
+    "chunk_count": 14,
+    "target_shard": "shard-01",
+    "query_routing": "Targeted (Single Shard)",
+    "_id": {
+      "$oid": "6afca4b7c2eaee95ceb542bc"
+    }
+  },
+  {
+    "tenant_id": "TNT-B",
+    "chunk_count": 18,
+    "target_shard": "shard-02",
+    "query_routing": "Targeted (Single Shard)",
+    "_id": {
+      "$oid": "6afca4b7c2eaee95ceb542bd"
+    }
+  },
+  {
+    "tenant_id": "TNT-C",
+    "chunk_count": 12,
+    "target_shard": "shard-03",
+    "query_routing": "Targeted (Single Shard)",
+    "_id": {
+      "$oid": "6afca4b7c2eaee95ceb542be"
+    }
+  }
+]

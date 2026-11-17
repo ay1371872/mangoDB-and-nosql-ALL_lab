@@ -1,0 +1,20 @@
+[
+  {
+    "sku": "PHONE-PRO",
+    "title": "Flagship Smartphone 5G",
+    "available_stock": 0,
+    "reserved_stock": 5,
+    "_id": {
+      "$oid": "6afca4ae7dac88211d0b8ca3"
+    }
+  },
+  {
+    "sku": "HEADSET-X",
+    "title": "Wireless Earbuds ANC",
+    "available_stock": 10,
+    "reserved_stock": 0,
+    "_id": {
+      "$oid": "6afca4ae7dac88211d0b8ca4"
+    }
+  }
+]

@@ -1,0 +1,37 @@
+[
+  {
+    "phase": "NORMAL_OPERATION",
+    "status": "Container PID 1248 serving writes",
+    "_id": {
+      "$oid": "6afca56d3e5c29f1fec8dff4"
+    }
+  },
+  {
+    "phase": "SIMULATED_SIGKILL",
+    "status": "docker kill -s 9 mongo_primary (Abrupt crash)",
+    "_id": {
+      "$oid": "6afca56d3e5c29f1fec8dff5"
+    }
+  },
+  {
+    "phase": "RESTART_POLICY",
+    "status": "Docker daemon detected exit code 137 -> Triggered 'unless-stopped' policy",
+    "_id": {
+      "$oid": "6afca56d3e5c29f1fec8dff6"
+    }
+  },
+  {
+    "phase": "WIREDTIGER_REPAIR",
+    "status": "WiredTiger recovered consistent checkpoint from journal in 1.2s",
+    "_id": {
+      "$oid": "6afca56d3e5c29f1fec8dff7"
+    }
+  },
+  {
+    "phase": "HEALTHY",
+    "status": "Container restored to HEALTHY status; 0 documents lost",
+    "_id": {
+      "$oid": "6afca56d3e5c29f1fec8dff8"
+    }
+  }
+]

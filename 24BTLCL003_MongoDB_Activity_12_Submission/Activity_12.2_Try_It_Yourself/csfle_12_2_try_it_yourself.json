@@ -1,0 +1,11 @@
+[
+  {
+    "account_id": "ACC-5544",
+    "owner": "Ayush Yadav",
+    "ssn_encrypted": "BIN_AEAD_DET:a261043ba42ec002a34d71dd",
+    "salary_encrypted": "BIN_AEAD_RND:81f8e30fb784f19607cdbc92",
+    "_id": {
+      "$oid": "6afca568c9c23854d335bbf3"
+    }
+  }
+]

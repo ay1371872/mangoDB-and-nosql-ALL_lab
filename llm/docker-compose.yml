@@ -1,0 +1,58 @@
+version: "3.8"
+
+# Threat Intelligence Full-Stack Containerization
+# Synthesizes Exercise 13 (Container Deployment) & Appendix A.6
+
+services:
+  mongo:
+    image: mongo:7.0
+    container_name: threat-mongo
+    restart: always
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_INITDB_DATABASE=threat_intel_db
+    volumes:
+      - threat_mongo_data:/data/db
+    healthcheck:
+      test: ["CMD", "mongosh", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: threat-backend
+    restart: always
+    ports:
+      - "8000:8000"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017
+      - MONGO_DB=threat_intel_db
+      - LLM_BACKEND=local_slm
+      - OLLAMA_BASE_URL=http://host.docker.internal:11434
+      - OLLAMA_MODEL=llama3.1:8b
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+    depends_on:
+      mongo:
+        condition: service_healthy
+    command: ["uvicorn", "threat_intel_api:app", "--host", "0.0.0.0", "--port", "8000"]
+
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: threat-frontend
+    restart: always
+    ports:
+      - "8501:8501"
+    environment:
+      - BACKEND_URL=http://backend:8000
+    depends_on:
+      - backend
+    command: ["streamlit", "run", "streamlit_app.py", "--server.port", "8501", "--server.address", "0.0.0.0"]
+
+volumes:
+  threat_mongo_data:

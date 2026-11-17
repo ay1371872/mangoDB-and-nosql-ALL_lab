@@ -1,0 +1,47 @@
+[
+  {
+    "chunk_id": "CHK-01",
+    "doc_title": "MongoDB Architecture Overview",
+    "text": "WiredTiger is the default storage engine in MongoDB, providing document-level concurrency and checkpoint durability.",
+    "embedding": [
+      0.45,
+      0.82,
+      -0.12,
+      0.33,
+      0.71
+    ],
+    "_id": {
+      "$oid": "6afca62ff8aa1bd6cd34fefd"
+    }
+  },
+  {
+    "chunk_id": "CHK-02",
+    "doc_title": "Replica Set Elections",
+    "text": "MongoDB replica sets use a Raft-like consensus election where priority biases the probability of winning the primary role.",
+    "embedding": [
+      0.12,
+      0.35,
+      0.88,
+      -0.05,
+      0.62
+    ],
+    "_id": {
+      "$oid": "6afca62ff8aa1bd6cd34fefe"
+    }
+  },
+  {
+    "chunk_id": "CHK-03",
+    "doc_title": "Sharding & Scalability",
+    "text": "Hashed sharding ensures uniform write distribution across chunks, preventing monotonic key write bottlenecks.",
+    "embedding": [
+      0.75,
+      0.15,
+      0.22,
+      0.81,
+      -0.19
+    ],
+    "_id": {
+      "$oid": "6afca62ff8aa1bd6cd34feff"
+    }
+  }
+]

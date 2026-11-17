@@ -1,0 +1,24 @@
+[
+  {
+    "customer_id": "CUST-901",
+    "name": "Ayush Yadav",
+    "email": "ayush@example.com",
+    "card_number": "4111-2222-3333-4444",
+    "aadhaar_id": "9876-5432-1098",
+    "balance": 85000.0,
+    "_id": {
+      "$oid": "6afca5658baaf0c69a9a796e"
+    }
+  },
+  {
+    "customer_id": "CUST-902",
+    "name": "Sneha Patel",
+    "email": "sneha@example.com",
+    "card_number": "5500-0000-1111-2222",
+    "aadhaar_id": "1234-5678-9012",
+    "balance": 42000.0,
+    "_id": {
+      "$oid": "6afca5658baaf0c69a9a796f"
+    }
+  }
+]

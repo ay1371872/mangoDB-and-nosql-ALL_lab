@@ -1,0 +1,48 @@
+[
+  {
+    "order_id": "ORD-201",
+    "customer_id": "CUST-1",
+    "product_ids": [
+      "PROD-1",
+      "PROD-2"
+    ],
+    "total": 6300,
+    "_id": {
+      "$oid": "6afca3a4a378d6cf6d407358"
+    }
+  },
+  {
+    "order_id": "ORD-202",
+    "customer_id": "CUST-2",
+    "product_ids": [
+      "PROD-2"
+    ],
+    "total": 1800,
+    "_id": {
+      "$oid": "6afca3a4a378d6cf6d407359"
+    }
+  },
+  {
+    "order_id": "ORD-203",
+    "customer_id": "CUST-3",
+    "product_ids": [
+      "PROD-1",
+      "PROD-3"
+    ],
+    "total": 6700,
+    "_id": {
+      "$oid": "6afca3a4a378d6cf6d40735a"
+    }
+  },
+  {
+    "order_id": "ORD-204",
+    "customer_id": "CUST-1",
+    "product_ids": [
+      "PROD-3"
+    ],
+    "total": 2200,
+    "_id": {
+      "$oid": "6afca3a4a378d6cf6d40735b"
+    }
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "session_id": "SES-CHAT-001",
+    "timestamp": 1794942538.8616083,
+    "role": "user",
+    "message": "Why should conversation history live in MongoDB rather than server memory?",
+    "_id": {
+      "$oid": "6afca64ca43b9c06a618b438"
+    }
+  },
+  {
+    "session_id": "SES-CHAT-001",
+    "timestamp": 1794942540.0616095,
+    "role": "assistant",
+    "message": "Storing conversation history in MongoDB ensures conversations survive backend restarts and enables horizontal scaling across multiple application instances behind a load balancer.",
+    "citations": [
+      "appendix_a_chat_app.txt"
+    ],
+    "_id": {
+      "$oid": "6afca64ca43b9c06a618b439"
+    }
+  }
+]

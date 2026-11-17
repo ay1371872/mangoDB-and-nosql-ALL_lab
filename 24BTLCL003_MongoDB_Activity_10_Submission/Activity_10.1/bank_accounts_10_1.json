@@ -1,0 +1,20 @@
+[
+  {
+    "account_id": "ACC-101",
+    "holder": "Ayush Yadav",
+    "balance": 40000.0,
+    "status": "active",
+    "_id": {
+      "$oid": "6afca4a9e247cbff412fea14"
+    }
+  },
+  {
+    "account_id": "ACC-102",
+    "holder": "Priya Sharma",
+    "balance": 25000.0,
+    "status": "active",
+    "_id": {
+      "$oid": "6afca4a9e247cbff412fea15"
+    }
+  }
+]

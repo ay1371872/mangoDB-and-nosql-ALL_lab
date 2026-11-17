@@ -1,0 +1,42 @@
+[
+  {
+    "paradigm": "Document (MongoDB)",
+    "primary_use_case": "Catalogs, E-Commerce, User Profiles",
+    "scaling": "Horizontal via Sharding",
+    "schema": "Dynamic JSON/BSON",
+    "query_strength": "Rich nested queries & aggregations",
+    "_id": {
+      "$oid": "6afca624965b57db1197a3cf"
+    }
+  },
+  {
+    "paradigm": "Relational (PostgreSQL)",
+    "primary_use_case": "Financial Ledgers, Accounting, ERP",
+    "scaling": "Vertical / Read Replicas",
+    "schema": "Strict Tabular SQL",
+    "query_strength": "Complex multi-table relational joins",
+    "_id": {
+      "$oid": "6afca624965b57db1197a3d0"
+    }
+  },
+  {
+    "paradigm": "Wide-Column (Cassandra)",
+    "primary_use_case": "High-write IoT Telemetry, Time-Series",
+    "scaling": "Masterless P2P Ring",
+    "schema": "Partitioned Tables",
+    "query_strength": "High throughput append-only writes",
+    "_id": {
+      "$oid": "6afca624965b57db1197a3d1"
+    }
+  },
+  {
+    "paradigm": "Graph (Neo4j)",
+    "primary_use_case": "Social Networks, Fraud Rings, Recs",
+    "scaling": "Causal Clustering",
+    "schema": "Nodes & Relationships",
+    "query_strength": "Multi-hop graph relationship traversals",
+    "_id": {
+      "$oid": "6afca624965b57db1197a3d2"
+    }
+  }
+]

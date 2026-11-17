@@ -1,0 +1,42 @@
+[
+  {
+    "phase": "PHASE_1_DUAL_WRITE",
+    "pool_write": "ACTIVE",
+    "silo_write": "ACTIVE",
+    "read_source": "POOL",
+    "status": "Shadow writes replicate live mutations",
+    "_id": {
+      "$oid": "6afca587f8db07433c40275b"
+    }
+  },
+  {
+    "phase": "PHASE_2_BACKFILL",
+    "pool_write": "ACTIVE",
+    "silo_write": "ACTIVE",
+    "read_source": "POOL",
+    "status": "Historical records backfilled to silo",
+    "_id": {
+      "$oid": "6afca587f8db07433c40275c"
+    }
+  },
+  {
+    "phase": "PHASE_3_READ_SWITCH",
+    "pool_write": "ACTIVE",
+    "silo_write": "ACTIVE",
+    "read_source": "SILO",
+    "status": "Traffic switched to silo (zero downtime)",
+    "_id": {
+      "$oid": "6afca587f8db07433c40275d"
+    }
+  },
+  {
+    "phase": "PHASE_4_DECOMMISSION",
+    "pool_write": "OFF",
+    "silo_write": "ACTIVE",
+    "read_source": "SILO",
+    "status": "Shared pool cleaned up; Silo standalone",
+    "_id": {
+      "$oid": "6afca587f8db07433c40275e"
+    }
+  }
+]

@@ -1,0 +1,20 @@
+[
+  {
+    "workload_scale": "10M Txns / Month",
+    "unified_mongo_atlas_cost": "$420 / mo",
+    "fragmented_polyglot_cost": "$1,150 / mo",
+    "savings_pct": "63.5% TCO Savings",
+    "_id": {
+      "$oid": "6afca643d8b71125842db16d"
+    }
+  },
+  {
+    "workload_scale": "100M Txns / Month",
+    "unified_mongo_atlas_cost": "$2,850 / mo",
+    "fragmented_polyglot_cost": "$6,900 / mo",
+    "savings_pct": "58.7% TCO Savings",
+    "_id": {
+      "$oid": "6afca643d8b71125842db16e"
+    }
+  }
+]

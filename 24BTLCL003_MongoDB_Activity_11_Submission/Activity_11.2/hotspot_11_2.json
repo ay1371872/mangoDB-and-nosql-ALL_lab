@@ -1,0 +1,22 @@
+[
+  {
+    "strategy": "Ranged (Timestamp)",
+    "shard_1_pct": 0.0,
+    "shard_2_pct": 0.0,
+    "shard_3_pct": 100.0,
+    "status": "SEVERE HOTSPOT: 100% writes to max chunk on Shard 3",
+    "_id": {
+      "$oid": "6afca4b96054d9dd822b5813"
+    }
+  },
+  {
+    "strategy": "Hashed (_id)",
+    "shard_1_pct": 33.4,
+    "shard_2_pct": 33.2,
+    "shard_3_pct": 33.4,
+    "status": "UNIFORM: Perfectly balanced write distribution",
+    "_id": {
+      "$oid": "6afca4b96054d9dd822b5814"
+    }
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "key": "country",
+    "cardinality": "Very Low (~195)",
+    "frequency": "High write skew on top countries",
+    "routing": "Scatter-gather for user queries",
+    "verdict": "POOR - High risk of un-splittable jumbo chunks",
+    "_id": {
+      "$oid": "6afca4b4e991c4a9a7760766"
+    }
+  },
+  {
+    "key": "created_at",
+    "cardinality": "Infinite",
+    "frequency": "Monotonically increasing writes",
+    "routing": "Targeted by date ranges",
+    "verdict": "POOR - Single shard write bottleneck (hotspot)",
+    "_id": {
+      "$oid": "6afca4b4e991c4a9a7760767"
+    }
+  },
+  {
+    "key": "user_id",
+    "cardinality": "High (Millions)",
+    "frequency": "Evenly distributed user actions",
+    "routing": "Targeted point queries to 1 shard",
+    "verdict": "GOOD - Uniform data & write distribution",
+    "_id": {
+      "$oid": "6afca4b4e991c4a9a7760768"
+    }
+  },
+  {
+    "key": "{_id: 'hashed'}",
+    "cardinality": "Maximum",
+    "frequency": "Perfect pseudo-random spread",
+    "routing": "Scatter-gather for range queries",
+    "verdict": "EXCELLENT for writes, poor for date ranges",
+    "_id": {
+      "$oid": "6afca4b4e991c4a9a7760769"
+    }
+  }
+]

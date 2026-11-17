@@ -1,0 +1,141 @@
+[
+  {
+    "_id": {
+      "$oid": "6abedccc4f329fd0f68e38a0"
+    },
+    "title": "Advanced Database Systems",
+    "code": "CS401",
+    "instructor": "Dr. Meera Iyer",
+    "credits": 4,
+    "schedule": {
+      "days": [
+        "Monday",
+        "Wednesday"
+      ],
+      "start_time": "10:00",
+      "end_time": "11:30",
+      "room": "B-204"
+    },
+    "roster": [
+      {
+        "name": "Aarav Sharma",
+        "student_id": "S1001",
+        "grade": "A"
+      },
+      {
+        "name": "Diya Patel",
+        "student_id": "S1002",
+        "grade": "B+"
+      },
+      {
+        "name": "Kabir Singh",
+        "student_id": "S1003",
+        "grade": "A"
+      },
+      {
+        "name": "Ananya Rao",
+        "student_id": "S1004",
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6abedccc95a39ec62c8e38a1"
+    },
+    "title": "Machine Learning Fundamentals",
+    "code": "CS402",
+    "instructor": "Dr. Rohan Mehta",
+    "credits": 3,
+    "schedule": {
+      "days": [
+        "Tuesday",
+        "Thursday"
+      ],
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "room": "A-101"
+    },
+    "roster": [
+      {
+        "name": "Rohan Gupta",
+        "student_id": "S1005",
+        "grade": "A"
+      },
+      {
+        "name": "Ishita Nair",
+        "student_id": "S1006",
+        "grade": "B+"
+      },
+      {
+        "name": "Aarav Sharma",
+        "student_id": "S1001",
+        "grade": "B"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6abedccc52bf5286918e38a2"
+    },
+    "title": "Distributed Systems",
+    "code": "CS403",
+    "instructor": "Dr. Meera Iyer",
+    "credits": 4,
+    "schedule": {
+      "days": [
+        "Monday",
+        "Friday"
+      ],
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "room": "C-305"
+    },
+    "roster": [
+      {
+        "name": "Diya Patel",
+        "student_id": "S1002",
+        "grade": "A"
+      },
+      {
+        "name": "Vihaan Joshi",
+        "student_id": "S1007",
+        "grade": "B"
+      },
+      {
+        "name": "Ananya Rao",
+        "student_id": "S1004",
+        "grade": "A"
+      }
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6abedcccb89424669e8e38a3"
+    },
+    "title": "Cloud Computing",
+    "code": "CS404",
+    "instructor": "Dr. Anita Desai",
+    "credits": 3,
+    "schedule": {
+      "days": [
+        "Wednesday"
+      ],
+      "start_time": "11:00",
+      "end_time": "13:00",
+      "room": "B-110"
+    },
+    "roster": [
+      {
+        "name": "Kabir Singh",
+        "student_id": "S1003",
+        "grade": "B+"
+      },
+      {
+        "name": "Ishita Nair",
+        "student_id": "S1006",
+        "grade": "A"
+      }
+    ]
+  }
+]

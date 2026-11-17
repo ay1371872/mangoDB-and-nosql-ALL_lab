@@ -1,0 +1,29 @@
+[
+  {
+    "mode": "primary",
+    "avg_latency_ms": 1.25,
+    "staleness_guarantee": "Zero staleness (Strictly linearizable)",
+    "load_distribution": "Primary only",
+    "_id": {
+      "$oid": "6afca49423327e5753e41a26"
+    }
+  },
+  {
+    "mode": "secondaryPreferred",
+    "avg_latency_ms": 2.1,
+    "staleness_guarantee": "Bounded by replication lag (~10-25ms)",
+    "load_distribution": "Offloads reads to secondaries",
+    "_id": {
+      "$oid": "6afca49423327e5753e41a27"
+    }
+  },
+  {
+    "mode": "nearest",
+    "avg_latency_ms": 0.85,
+    "staleness_guarantee": "Lowest network ping, eventual consistency",
+    "load_distribution": "Geographically closest node",
+    "_id": {
+      "$oid": "6afca49423327e5753e41a28"
+    }
+  }
+]

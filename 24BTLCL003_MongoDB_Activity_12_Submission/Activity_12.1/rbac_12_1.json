@@ -1,0 +1,39 @@
+[
+  {
+    "username": "admin_sec",
+    "roles": [
+      "userAdminAnyDatabase",
+      "clusterAdmin"
+    ],
+    "privilege": "Full Cluster Governance",
+    "_id": {
+      "$oid": "6afca55f62ce77756044c26d"
+    }
+  },
+  {
+    "username": "app_backend",
+    "roles": [
+      {
+        "role": "app_crud_only",
+        "db": "nosql_labs"
+      }
+    ],
+    "privilege": "Read & Write on products, orders. NO DROP.",
+    "_id": {
+      "$oid": "6afca55f62ce77756044c26e"
+    }
+  },
+  {
+    "username": "bi_analyst",
+    "roles": [
+      {
+        "role": "read",
+        "db": "nosql_labs"
+      }
+    ],
+    "privilege": "Read-only access for aggregation reporting",
+    "_id": {
+      "$oid": "6afca55f62ce77756044c26f"
+    }
+  }
+]

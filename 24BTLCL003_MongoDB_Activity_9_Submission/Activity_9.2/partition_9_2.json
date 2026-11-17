@@ -1,0 +1,42 @@
+[
+  {
+    "step": 1,
+    "phase": "STEADY_STATE",
+    "majority_partition": "Nodes [0, 1, 2] healthy; writes with w:majority succeed",
+    "_id": {
+      "$oid": "6afca4a3c393ed17a4aa5f7e"
+    }
+  },
+  {
+    "step": 2,
+    "phase": "PARTITIONED",
+    "majority_partition": "Node 0 severed from Nodes 1 & 2 by network wall",
+    "_id": {
+      "$oid": "6afca4a3c393ed17a4aa5f7f"
+    }
+  },
+  {
+    "step": 3,
+    "phase": "QUORUM_LOST",
+    "majority_partition": "Node 0 loses majority, steps down to SECONDARY to prevent split-brain",
+    "_id": {
+      "$oid": "6afca4a3c393ed17a4aa5f80"
+    }
+  },
+  {
+    "step": 4,
+    "phase": "NEW_PRIMARY",
+    "majority_partition": "Node 1 elected new PRIMARY by Nodes 1 & 2",
+    "_id": {
+      "$oid": "6afca4a3c393ed17a4aa5f81"
+    }
+  },
+  {
+    "step": 5,
+    "phase": "REINTEGRATION",
+    "majority_partition": "Node 0 reconnected; uncommitted local writes written to rollback file",
+    "_id": {
+      "$oid": "6afca4a3c393ed17a4aa5f82"
+    }
+  }
+]

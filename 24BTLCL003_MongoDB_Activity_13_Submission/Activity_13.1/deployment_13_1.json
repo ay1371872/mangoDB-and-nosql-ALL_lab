@@ -1,0 +1,35 @@
+[
+  {
+    "service": "mongo_primary",
+    "image": "mongo:7.0",
+    "ports": "27017:27017",
+    "volume": "mongo_data:/data/db",
+    "memory_limit": "512MB",
+    "healthcheck": "mongosh --eval 'db.runCommand({ping:1})'",
+    "_id": {
+      "$oid": "6afca56af5c2c5d1d1ef842c"
+    }
+  },
+  {
+    "service": "backend_api",
+    "image": "app_api:v1.0",
+    "ports": "8000:8000",
+    "volume": "app_logs:/logs",
+    "memory_limit": "256MB",
+    "depends_on": "mongo_primary:healthy",
+    "_id": {
+      "$oid": "6afca56af5c2c5d1d1ef842d"
+    }
+  },
+  {
+    "service": "frontend_ui",
+    "image": "app_ui:v1.0",
+    "ports": "8501:8501",
+    "volume": "none",
+    "memory_limit": "256MB",
+    "depends_on": "backend_api",
+    "_id": {
+      "$oid": "6afca56af5c2c5d1d1ef842e"
+    }
+  }
+]

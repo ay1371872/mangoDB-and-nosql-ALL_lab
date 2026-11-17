@@ -1,0 +1,49 @@
+[
+  {
+    "_id": 1,
+    "title": "Why MongoDB Schema Design Matters",
+    "author": "Neha Kapoor",
+    "tags": [
+      "mongodb",
+      "schema"
+    ],
+    "comment_count": 10000,
+    "latest_comments": [
+      {
+        "author": "Meera",
+        "text": "Is there a performance difference on very large collections?",
+        "created_at": {
+          "$date": "2026-09-08T06:39:00.000Z"
+        }
+      },
+      {
+        "author": "Karan",
+        "text": "Could you explain the indexing part with one more example?",
+        "created_at": {
+          "$date": "2026-09-08T06:38:00.000Z"
+        }
+      },
+      {
+        "author": "Priya",
+        "text": "I tried this in my project and it worked well.",
+        "created_at": {
+          "$date": "2026-09-08T06:37:00.000Z"
+        }
+      },
+      {
+        "author": "Sneha",
+        "text": "Really enjoyed this post, thanks for sharing the details.",
+        "created_at": {
+          "$date": "2026-09-08T06:36:00.000Z"
+        }
+      },
+      {
+        "author": "Meera",
+        "text": "Really enjoyed this post, thanks for sharing the details.",
+        "created_at": {
+          "$date": "2026-09-08T06:35:00.000Z"
+        }
+      }
+    ]
+  }
+]

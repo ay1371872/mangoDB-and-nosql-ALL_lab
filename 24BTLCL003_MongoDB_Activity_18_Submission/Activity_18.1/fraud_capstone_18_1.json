@@ -1,0 +1,32 @@
+[
+  {
+    "total_transactions": 10000,
+    "fraud_flagged_count": 200,
+    "queries_evaluated": [
+      {
+        "name": "User Transaction History (Point Lookup)",
+        "avg_ms": 0.85,
+        "p95_ms": 1.42,
+        "p99_ms": 2.1,
+        "index_used": "idx_user_time"
+      },
+      {
+        "name": "High-Risk Merchant Filter ($match + $sort)",
+        "avg_ms": 3.12,
+        "p95_ms": 5.4,
+        "p99_ms": 8.1,
+        "index_used": "idx_risk"
+      },
+      {
+        "name": "Hourly Velocity Fraud Aggregation",
+        "avg_ms": 12.4,
+        "p95_ms": 19.8,
+        "p99_ms": 28.5,
+        "index_used": "idx_user_time_agg"
+      }
+    ],
+    "_id": {
+      "$oid": "6afca63a93a98bf9fec4d316"
+    }
+  }
+]

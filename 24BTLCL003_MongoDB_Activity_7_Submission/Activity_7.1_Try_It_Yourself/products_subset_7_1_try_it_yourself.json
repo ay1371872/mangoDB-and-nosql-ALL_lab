@@ -1,0 +1,32 @@
+[
+  {
+    "product_id": "PROD-900",
+    "name": "Wireless Noise Cancelling Headphones",
+    "price": 14999.0,
+    "avg_rating": 4.8,
+    "total_reviews": 1240,
+    "recent_reviews_subset": [
+      {
+        "reviewer": "Ananya",
+        "rating": 5,
+        "comment": "Outstanding noise cancellation!",
+        "date": "2024-03-10"
+      },
+      {
+        "reviewer": "Rohan",
+        "rating": 5,
+        "comment": "Battery lasts over 30 hours.",
+        "date": "2024-03-08"
+      },
+      {
+        "reviewer": "Manish",
+        "rating": 4,
+        "comment": "Great sound, slightly heavy.",
+        "date": "2024-03-05"
+      }
+    ],
+    "_id": {
+      "$oid": "6afca3de4e38f354f1c3bafd"
+    }
+  }
+]

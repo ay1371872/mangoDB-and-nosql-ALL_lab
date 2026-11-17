@@ -1,0 +1,42 @@
+[
+  {
+    "_id": {
+      "$oid": "6abedc7925ab199c67795024"
+    },
+    "application": "E-commerce platform",
+    "data_domain": "Product catalog",
+    "nosql_family": "Document",
+    "example_product": "MongoDB",
+    "reasoning": "Products have very different attributes: a phone has storage and RAM while a shirt has size and colour. A document model stores each product with its own nested fields, reviews and images, and the schema can change without migrations."
+  },
+  {
+    "_id": {
+      "$oid": "6abedc799aa422172b795025"
+    },
+    "application": "E-commerce platform",
+    "data_domain": "Shopping cart and sessions",
+    "nosql_family": "Key-Value",
+    "example_product": "Redis",
+    "reasoning": "A cart is read and written by session or user ID on every click and needs very low latency. Key-value lookups in memory are ideal, and built-in expiry removes abandoned sessions."
+  },
+  {
+    "_id": {
+      "$oid": "6abedc7976fceebd91795026"
+    },
+    "application": "E-commerce platform",
+    "data_domain": "Order history and click-stream events",
+    "nosql_family": "Column-Family",
+    "example_product": "Cassandra",
+    "reasoning": "Orders and click events are append-only, arrive in huge volumes, and are queried by customer and time range. Partitioning by customer and clustering by time gives fast writes and efficient range reads at scale."
+  },
+  {
+    "_id": {
+      "$oid": "6abedc79d11282b883795027"
+    },
+    "application": "E-commerce platform",
+    "data_domain": "Recommendations",
+    "nosql_family": "Graph",
+    "example_product": "Neo4j",
+    "reasoning": "Suggestions like 'customers who bought this also bought' are multi-hop relationships between users, products and categories. A graph database traverses these links quickly without expensive joins."
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "dimension": "Throughput Scaling",
+    "mongodb": "Excellent (Sharded clusters)",
+    "postgresql": "Moderate (Read replicas only)",
+    "cassandra": "Outstanding (P2P multi-master)",
+    "neo4j": "Moderate (Leader-follower)",
+    "_id": {
+      "$oid": "6afca640e68bcd7afe1dd1b7"
+    }
+  },
+  {
+    "dimension": "Schema Evolution",
+    "mongodb": "Dynamic (Zero-downtime)",
+    "postgresql": "Rigid (ALTER TABLE locks)",
+    "cassandra": "Rigid (Query-first schema)",
+    "neo4j": "Flexible (Property graph)",
+    "_id": {
+      "$oid": "6afca640e68bcd7afe1dd1b8"
+    }
+  },
+  {
+    "dimension": "ACID Multi-Doc Support",
+    "mongodb": "Yes (Distributed sessions)",
+    "postgresql": "Native & Highly Mature",
+    "cassandra": "No (Lightweight Paxos only)",
+    "neo4j": "Yes (Graph transaction ACID)",
+    "_id": {
+      "$oid": "6afca640e68bcd7afe1dd1b9"
+    }
+  },
+  {
+    "dimension": "Deep Joins / Graph",
+    "mongodb": "Good ($lookup / $graphLookup)",
+    "postgresql": "Good (SQL JOIN)",
+    "cassandra": "None (No join capability)",
+    "neo4j": "Exceptional (Index-free)",
+    "_id": {
+      "$oid": "6afca640e68bcd7afe1dd1ba"
+    }
+  }
+]

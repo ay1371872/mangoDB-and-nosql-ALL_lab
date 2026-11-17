@@ -1,0 +1,22 @@
+[
+  {
+    "doc_id": "TXN-8801",
+    "user": "Ayush",
+    "amount": 2500,
+    "status": "rolled_back",
+    "reconciled": true,
+    "_id": {
+      "$oid": "6afca4a58e09e4dc665328c0"
+    }
+  },
+  {
+    "doc_id": "TXN-8802",
+    "user": "Sneha",
+    "amount": 4200,
+    "status": "rolled_back",
+    "reconciled": true,
+    "_id": {
+      "$oid": "6afca4a58e09e4dc665328c1"
+    }
+  }
+]

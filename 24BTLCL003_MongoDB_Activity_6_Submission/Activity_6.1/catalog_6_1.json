@@ -1,0 +1,87 @@
+[
+  {
+    "sku": "SKU-01",
+    "category": "Electronics",
+    "status": "active",
+    "rating": 4.5,
+    "price": 4500,
+    "tags": [
+      "gadget",
+      "usb",
+      "audio"
+    ],
+    "_id": {
+      "$oid": "6afca3aa0cb343cd11b7686c"
+    }
+  },
+  {
+    "sku": "SKU-02",
+    "category": "Electronics",
+    "status": "active",
+    "rating": 4.8,
+    "price": 8900,
+    "tags": [
+      "wireless",
+      "audio"
+    ],
+    "_id": {
+      "$oid": "6afca3aa0cb343cd11b7686d"
+    }
+  },
+  {
+    "sku": "SKU-03",
+    "category": "Office",
+    "status": "pending",
+    "rating": 4.1,
+    "price": 1200,
+    "tags": [
+      "stationery",
+      "desk"
+    ],
+    "_id": {
+      "$oid": "6afca3aa0cb343cd11b7686e"
+    }
+  },
+  {
+    "sku": "SKU-04",
+    "category": "Office",
+    "status": "active",
+    "rating": 4.7,
+    "price": 3400,
+    "tags": [
+      "ergonomic",
+      "desk"
+    ],
+    "_id": {
+      "$oid": "6afca3aa0cb343cd11b7686f"
+    }
+  },
+  {
+    "sku": "SKU-05",
+    "category": "Electronics",
+    "status": "active",
+    "rating": 3.9,
+    "price": 2100,
+    "tags": [
+      "usb",
+      "gadget"
+    ],
+    "_id": {
+      "$oid": "6afca3aa0cb343cd11b76870"
+    }
+  },
+  {
+    "sku": "SKU-06",
+    "category": "Accessories",
+    "status": "archived",
+    "rating": 4.2,
+    "price": 950,
+    "tags": [
+      "cable",
+      "usb"
+    ],
+    "_id": {
+      "$oid": "6afca3aa0cb343cd11b76871"
+    }
+  }
+]

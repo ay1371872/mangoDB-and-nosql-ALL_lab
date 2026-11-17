@@ -1,0 +1,31 @@
+[
+  {
+    "transaction_identifier": "TXN-998877",
+    "customer_full_name": "Ayush Yadav",
+    "customer_financial_institution": "State Bank of India",
+    "transaction_monetary_amount": 15450.75,
+    "transaction_currency_code": "INR",
+    "_id": {
+      "$oid": "6afca3e37e62a46994885b39"
+    }
+  },
+  {
+    "txn_id": "TXN-998877",
+    "name": "Ayush Yadav",
+    "bank": "SBI",
+    "amount": 15450.75,
+    "curr": "INR",
+    "_id": {
+      "$oid": "6afca3e37e62a46994885b3a"
+    }
+  },
+  {
+    "_id": "TXN-998877",
+    "d": [
+      "Ayush Yadav",
+      "SBI",
+      15450.75,
+      "INR"
+    ]
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "attempt": 1,
+    "delay_s": 0.5,
+    "status": "ConnectionRefused - Election in progress",
+    "success": false,
+    "_id": {
+      "$oid": "6afca49ad32cc77d4b924f31"
+    }
+  },
+  {
+    "attempt": 2,
+    "delay_s": 1.0,
+    "status": "NotWritablePrimary - Waiting for consensus",
+    "success": false,
+    "_id": {
+      "$oid": "6afca49ad32cc77d4b924f32"
+    }
+  },
+  {
+    "attempt": 3,
+    "delay_s": 2.0,
+    "status": "Connected to newly elected primary (localhost:27018)",
+    "success": true,
+    "_id": {
+      "$oid": "6afca49ad32cc77d4b924f33"
+    }
+  }
+]

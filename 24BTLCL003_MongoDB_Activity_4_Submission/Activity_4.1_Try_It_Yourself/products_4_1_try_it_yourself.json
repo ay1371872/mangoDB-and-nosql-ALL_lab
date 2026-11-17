@@ -1,0 +1,213 @@
+[{
+  "_id": {
+    "$oid": "6aa16a4ee2831ea8b3e3caf8"
+  },
+  "sku": "PROD-A",
+  "title": "Wireless Headphones",
+  "price": 49.99,
+  "stock": 25,
+  "tags": [
+    "electronics",
+    "wireless"
+  ],
+  "image": "https://via.placeholder.com/150?text=Headphones"
+},
+{
+  "_id": {
+    "$oid": "6aa16a4ee2831ea8b3e3caf9"
+  },
+  "sku": "PROD-B",
+  "title": "Bluetooth Speaker",
+  "price": 35.99,
+  "stock": 40,
+  "tags": [
+    "electronics",
+    "wireless",
+    "audio"
+  ],
+  "image": "https://via.placeholder.com/150?text=Speaker"
+},
+{
+  "_id": {
+    "$oid": "6aa16a4ee2831ea8b3e3cafa"
+  },
+  "sku": "PROD-C",
+  "title": "Mechanical Keyboard",
+  "price": 89.99,
+  "stock": 15,
+  "tags": [
+    "electronics",
+    "mechanical"
+  ],
+  "image": "https://via.placeholder.com/150?text=Keyboard"
+},
+{
+  "_id": {
+    "$oid": "6aa16a4ee2831ea8b3e3cafb"
+  },
+  "sku": "PROD-D",
+  "title": "Gaming Mouse",
+  "price": 29.99,
+  "stock": 0,
+  "tags": [
+    "electronics",
+    "wireless"
+  ],
+  "image": "https://via.placeholder.com/150?text=Mouse"
+},
+{
+  "_id": {
+    "$oid": "6aa16a4ee2831ea8b3e3cafc"
+  },
+  "sku": "PROD-E",
+  "title": "4K Monitor",
+  "price": 299.99,
+  "stock": 8,
+  "tags": [
+    "electronics",
+    "premium"
+  ],
+  "image": "https://via.placeholder.com/150?text=Monitor"
+},
+{
+  "_id": {
+    "$oid": "6aa16a4ee2831ea8b3e3cafd"
+  },
+  "sku": "PROD-F",
+  "title": "Gaming Laptop",
+  "price": 1299.99,
+  "stock": 5,
+  "tags": [
+    "electronics",
+    "premium",
+    "gaming"
+  ],
+  "image": "https://via.placeholder.com/150?text=Laptop"
+},
+{
+  "_id": {
+    "$oid": "6aa16a4ee2831ea8b3e3cafe"
+  },
+  "sku": "PROD-G",
+  "title": "USB-C Hub",
+  "price": 24.99,
+  "stock": 60,
+  "tags": [
+    "electronics",
+    "accessory"
+  ],
+  "image": "https://via.placeholder.com/150?text=USB-Hub"
+},
+{
+  "_id": {
+    "$oid": "6aa16a4ee2831ea8b3e3caff"
+  },
+  "sku": "PROD-H",
+  "title": "Smart Watch",
+  "price": 199.99,
+  "stock": 0,
+  "tags": [
+    "electronics",
+    "wireless",
+    "premium"
+  ],
+  "image": "https://via.placeholder.com/150?text=Watch"
+},
+{
+  "_id": {
+    "$oid": "6aa16a4ee2831ea8b3e3cb00"
+  },
+  "sku": "PROD-I",
+  "title": "Laptop Stand",
+  "price": 45,
+  "stock": 20,
+  "tags": [
+    "office",
+    "ergonomic"
+  ],
+  "image": "https://via.placeholder.com/150?text=Stand"
+},
+{
+  "_id": {
+    "$oid": "6aa16a4ee2831ea8b3e3cb01"
+  },
+  "sku": "PROD-J",
+  "title": "Wireless Charger",
+  "price": 39.99,
+  "stock": 35,
+  "tags": [
+    "electronics",
+    "wireless"
+  ],
+  "image": "https://via.placeholder.com/150?text=Charger"
+},
+{
+  "_id": {
+    "$oid": "6aa16a4ee2831ea8b3e3cb02"
+  },
+  "sku": "PROD-K",
+  "title": "Premium Webcam",
+  "price": 149.99,
+  "stock": 12,
+  "tags": [
+    "electronics",
+    "premium"
+  ],
+  "image": "https://via.placeholder.com/150?text=Webcam"
+},
+{
+  "_id": {
+    "$oid": "6aa16a4ee2831ea8b3e3cb03"
+  },
+  "sku": "PROD-L",
+  "title": "Desk Lamp",
+  "price": 19.99,
+  "stock": 0,
+  "tags": [
+    "office",
+    "lighting"
+  ],
+  "image": "https://via.placeholder.com/150?text=Lamp"
+},
+{
+  "_id": {
+    "$oid": "6aa16a4ee2831ea8b3e3cb04"
+  },
+  "sku": "PROD-M",
+  "title": "Cotton Shirt",
+  "price": 24.99,
+  "stock": 30,
+  "tags": [
+    "clothing",
+    "cotton"
+  ],
+  "image": "https://via.placeholder.com/150?text=Cotton-Shirt"
+},
+{
+  "_id": {
+    "$oid": "6aa16a4ee2831ea8b3e3cb05"
+  },
+  "sku": "PROD-N",
+  "title": "Cotton T-Shirt",
+  "price": 19.99,
+  "stock": 50,
+  "tags": [
+    "clothing",
+    "cotton"
+  ],
+  "image": "https://via.placeholder.com/150?text=Cotton-TShirt"
+},
+{
+  "_id": {
+    "$oid": "6aa16a4ee2831ea8b3e3cb06"
+  },
+  "sku": "PROD-O",
+  "title": "Premium Cotton Pants",
+  "price": 39.99,
+  "stock": 20,
+  "tags": [
+    "clothing",
+    "cotton"
+  ],
+  "image": "https://via.placeholder.com/150?text=Cotton-Pants"
+}]

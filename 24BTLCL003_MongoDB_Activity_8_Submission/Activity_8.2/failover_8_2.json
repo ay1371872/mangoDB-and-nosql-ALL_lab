@@ -1,0 +1,47 @@
+[
+  {
+    "event": "STARTUP",
+    "time_s": 0.0,
+    "primary": "localhost:27017",
+    "status": "Stable rs0 cluster running",
+    "_id": {
+      "$oid": "6afca4976fa58e2901ebbec4"
+    }
+  },
+  {
+    "event": "STEPDOWN_SENT",
+    "time_s": 2.1,
+    "primary": "NONE",
+    "status": "rs.stepDown(60) executed on primary",
+    "_id": {
+      "$oid": "6afca4976fa58e2901ebbec5"
+    }
+  },
+  {
+    "event": "ELECTION_PHASE",
+    "time_s": 3.4,
+    "primary": "ELECTION_IN_PROGRESS",
+    "status": "Members 1 & 2 voting in election",
+    "_id": {
+      "$oid": "6afca4976fa58e2901ebbec6"
+    }
+  },
+  {
+    "event": "FAILOVER_DONE",
+    "time_s": 5.2,
+    "primary": "localhost:27018",
+    "status": "*** NEW PRIMARY ELECTED ***",
+    "_id": {
+      "$oid": "6afca4976fa58e2901ebbec7"
+    }
+  },
+  {
+    "event": "RESUMED_WRITES",
+    "time_s": 5.8,
+    "primary": "localhost:27018",
+    "status": "PyMongo driver resumed writes to new primary",
+    "_id": {
+      "$oid": "6afca4976fa58e2901ebbec8"
+    }
+  }
+]

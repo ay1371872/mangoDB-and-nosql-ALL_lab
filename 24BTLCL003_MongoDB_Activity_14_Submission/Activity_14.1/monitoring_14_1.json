@@ -1,0 +1,38 @@
+[
+  {
+    "server_version": "7.0.5",
+    "uptime_seconds": 86400,
+    "connections": {
+      "current": 42,
+      "available": 958,
+      "totalCreated": 1250
+    },
+    "opcounters": {
+      "insert": 14200,
+      "query": 85900,
+      "update": 23400,
+      "delete": 1200,
+      "getmore": 5400
+    },
+    "memory_mb": {
+      "resident": 1420,
+      "virtual": 3890
+    },
+    "wiredTiger_cache": {
+      "bytes_currently_in_cache_mb": 512,
+      "max_bytes_configured_mb": 1024,
+      "dirty_pages_pct": 3.4
+    },
+    "slow_queries_detected": [
+      {
+        "op": "query",
+        "ns": "nosql_labs.orders",
+        "millis": 142,
+        "planSummary": "COLLSCAN"
+      }
+    ],
+    "_id": {
+      "$oid": "6afca5753367562724bf47d0"
+    }
+  }
+]

@@ -1,0 +1,29 @@
+[
+  {
+    "query_key": "user:USR-1001:profile",
+    "cache_status": "CACHE_MISS",
+    "latency_ms": 3.8,
+    "source": "MongoDB Read -> Injected into RAM Cache",
+    "_id": {
+      "$oid": "6afca62c1f2277c5ce70aee1"
+    }
+  },
+  {
+    "query_key": "user:USR-1001:profile",
+    "cache_status": "CACHE_HIT",
+    "latency_ms": 0.2,
+    "source": "RAM Cache (95% latency reduction)",
+    "_id": {
+      "$oid": "6afca62c1f2277c5ce70aee2"
+    }
+  },
+  {
+    "query_key": "user:USR-1002:profile",
+    "cache_status": "CACHE_HIT",
+    "latency_ms": 0.2,
+    "source": "RAM Cache (Sub-millisecond SLA)",
+    "_id": {
+      "$oid": "6afca62c1f2277c5ce70aee3"
+    }
+  }
+]

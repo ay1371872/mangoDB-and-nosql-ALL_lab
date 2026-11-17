@@ -1,0 +1,29 @@
+[
+  {
+    "emp_id": "EMP-01",
+    "name": "Arjun",
+    "salary": 45000,
+    "status": "PROCESSED",
+    "_id": {
+      "$oid": "6afca4ac9d285bfae4fec646"
+    }
+  },
+  {
+    "emp_id": "EMP-02",
+    "name": "Sneha",
+    "salary": 52000,
+    "status": "PROCESSED",
+    "_id": {
+      "$oid": "6afca4ac9d285bfae4fec647"
+    }
+  },
+  {
+    "emp_id": "EMP-03",
+    "name": "Rahul",
+    "salary": 48000,
+    "status": "PROCESSED",
+    "_id": {
+      "$oid": "6afca4ac9d285bfae4fec648"
+    }
+  }
+]

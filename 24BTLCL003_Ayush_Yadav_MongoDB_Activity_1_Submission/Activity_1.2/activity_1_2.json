@@ -1,0 +1,62 @@
+[
+  {
+    "_id": {
+      "$oid": "6abedc783501e8abe42d7754"
+    },
+    "application": "Ride-sharing app",
+    "data_domain": "Driver locations",
+    "nosql_family": "Key-Value",
+    "example_product": "Redis",
+    "justification": "Locations are written very frequently and read by driver ID, with no complex querying needed, so fast key lookups win."
+  },
+  {
+    "_id": {
+      "$oid": "6abedc783d0c09f5dd2d7755"
+    },
+    "application": "Ride-sharing app",
+    "data_domain": "User profiles",
+    "nosql_family": "Document",
+    "example_product": "MongoDB",
+    "justification": "Each profile is a self-contained unit with nested fields such as addresses, preferences and payment methods."
+  },
+  {
+    "_id": {
+      "$oid": "6abedc7893de46eaf12d7756"
+    },
+    "application": "Ride-sharing app",
+    "data_domain": "Ride history",
+    "nosql_family": "Column-Family",
+    "example_product": "Cassandra",
+    "justification": "History is append-only and queried by rider ID and date range, which suits partition and clustering keys. A document database is an acceptable alternative."
+  },
+  {
+    "_id": {
+      "$oid": "6abedc7838afb541d92d7757"
+    },
+    "application": "Ride-sharing app",
+    "data_domain": "Driver-rider relationship graph",
+    "nosql_family": "Graph",
+    "example_product": "Neo4j",
+    "justification": "Efficient traversal of connections, referral networks and fraud patterns needs relationships as first-class data."
+  },
+  {
+    "_id": {
+      "$oid": "6abedc78031dc3f7472d7758"
+    },
+    "application": "Social media analytics",
+    "data_domain": "Raw post storage",
+    "nosql_family": "Column-Family",
+    "example_product": "Cassandra",
+    "justification": "Millions of posts per day need very high write throughput, and access follows a time-series pattern."
+  },
+  {
+    "_id": {
+      "$oid": "6abedc785062d86a1f2d7759"
+    },
+    "application": "Social media analytics",
+    "data_domain": "Real-time analytics layer",
+    "nosql_family": "Key-Value",
+    "example_product": "Redis",
+    "justification": "Counters and trending-topic caches need in-memory speed, backed by a column-family store for durable storage."
+  }
+]

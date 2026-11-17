@@ -1,0 +1,18 @@
+[
+  {
+    "tenant_id": "ORG-ALPHA",
+    "record_id": "REC-01",
+    "data": "Alpha operational logs",
+    "_id": {
+      "$oid": "6afca584e97e1d95f95c04ea"
+    }
+  },
+  {
+    "tenant_id": "ORG-ALPHA",
+    "record_id": "REC-02",
+    "data": "Alpha customer records",
+    "_id": {
+      "$oid": "6afca584e97e1d95f95c04eb"
+    }
+  }
+]

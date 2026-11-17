@@ -1,0 +1,32 @@
+[
+  {
+    "query_depth": "1-Hop (Direct Friends)",
+    "mongo_operator": "$lookup / direct match",
+    "mongo_latency_ms": 1.2,
+    "graph_db_latency_ms": 0.8,
+    "recommendation": "Either engine performs exceptionally",
+    "_id": {
+      "$oid": "6afca62673f7ba4f9a3beb5a"
+    }
+  },
+  {
+    "query_depth": "2-Hop (Mutual Friends)",
+    "mongo_operator": "$graphLookup (maxDepth=1)",
+    "mongo_latency_ms": 4.5,
+    "graph_db_latency_ms": 1.4,
+    "recommendation": "MongoDB handles comfortably",
+    "_id": {
+      "$oid": "6afca62673f7ba4f9a3beb5b"
+    }
+  },
+  {
+    "query_depth": "3-Hop (Extended Network)",
+    "mongo_operator": "$graphLookup (maxDepth=2)",
+    "mongo_latency_ms": 18.2,
+    "graph_db_latency_ms": 2.1,
+    "recommendation": "Graph DB index-free adjacency wins at deep depths",
+    "_id": {
+      "$oid": "6afca62673f7ba4f9a3beb5c"
+    }
+  }
+]

@@ -1,0 +1,24 @@
+[
+  {
+    "user_id": "USR-401",
+    "txn_count_60s": 5,
+    "distinct_ips": 3,
+    "total_amount": 75000,
+    "risk_score": 98.5,
+    "action": "ACCOUNT_LOCKED (Automated Velocity Fraud Trigger)",
+    "_id": {
+      "$oid": "6afca63dd57ee5854a960848"
+    }
+  },
+  {
+    "user_id": "USR-402",
+    "txn_count_60s": 1,
+    "distinct_ips": 1,
+    "total_amount": 1200,
+    "risk_score": 2.1,
+    "action": "APPROVED",
+    "_id": {
+      "$oid": "6afca63dd57ee5854a960849"
+    }
+  }
+]

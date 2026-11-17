@@ -1,0 +1,13 @@
+[
+  {
+    "session_id": "SES-CHAT-001",
+    "raw_messages_count": 28,
+    "raw_tokens": 4200,
+    "compressed_summary_tokens": 180,
+    "compression_ratio": "95.7% token reduction",
+    "status": "OPTIMIZED FOR LLM",
+    "_id": {
+      "$oid": "6afca64e1f74674f188f4c78"
+    }
+  }
+]

@@ -1,0 +1,44 @@
+[
+  {
+    "step": 1,
+    "action": "INITIAL_LOAD",
+    "shards": {
+      "s1": 42,
+      "s2": 10,
+      "s3": 8,
+      "s4": 6
+    },
+    "imbalance_ratio": "4.2 (Balancer Triggered)",
+    "_id": {
+      "$oid": "6afca4bc3f6143c6ec292a60"
+    }
+  },
+  {
+    "step": 2,
+    "action": "CHUNK_SPLIT",
+    "shards": {
+      "s1": 56,
+      "s2": 10,
+      "s3": 8,
+      "s4": 6
+    },
+    "imbalance_ratio": "5.6 (Jumbo split into 14 chunks)",
+    "_id": {
+      "$oid": "6afca4bc3f6143c6ec292a61"
+    }
+  },
+  {
+    "step": 3,
+    "action": "BALANCER_MIGRATE",
+    "shards": {
+      "s1": 20,
+      "s2": 20,
+      "s3": 20,
+      "s4": 20
+    },
+    "imbalance_ratio": "1.0 (Cluster Rebalanced)",
+    "_id": {
+      "$oid": "6afca4bc3f6143c6ec292a62"
+    }
+  }
+]

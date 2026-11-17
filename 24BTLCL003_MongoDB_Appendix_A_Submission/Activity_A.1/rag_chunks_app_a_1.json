@@ -1,0 +1,44 @@
+[
+  {
+    "source": "chapter_05_aggregation.txt",
+    "text": "The aggregation pipeline is a sequence of stages transforming documents. $group groups documents by an identifier and computes accumulator metrics.",
+    "embedding": [
+      0.24,
+      0.78,
+      0.15,
+      -0.42,
+      0.61
+    ],
+    "_id": {
+      "$oid": "6afca646a8fd55680553b330"
+    }
+  },
+  {
+    "source": "chapter_10_transactions.txt",
+    "text": "MongoDB transactions enforce ACID properties across multiple documents. Sessions ensure atomic commits or clean rollbacks upon failure.",
+    "embedding": [
+      0.65,
+      0.12,
+      0.88,
+      0.05,
+      -0.21
+    ],
+    "_id": {
+      "$oid": "6afca646a8fd55680553b331"
+    }
+  },
+  {
+    "source": "appendix_a_chat_app.txt",
+    "text": "In a production RAG application, conversation memory is stored in MongoDB rather than server memory to survive restarts and enable horizontal scaling.",
+    "embedding": [
+      0.38,
+      0.85,
+      -0.19,
+      0.52,
+      0.44
+    ],
+    "_id": {
+      "$oid": "6afca646a8fd55680553b332"
+    }
+  }
+]

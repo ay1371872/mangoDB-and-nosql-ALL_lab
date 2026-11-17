@@ -1,0 +1,31 @@
+[
+  {
+    "role": "support_agent",
+    "allowed_collections": [
+      "customers",
+      "tickets"
+    ],
+    "blocked_collections": [
+      "orders",
+      "financial_audit"
+    ],
+    "doc_filter": "status == 'open'",
+    "_id": {
+      "$oid": "6afca5626f20242f69a630b5"
+    }
+  },
+  {
+    "role": "billing_clerk",
+    "allowed_collections": [
+      "orders",
+      "invoices"
+    ],
+    "blocked_collections": [
+      "system.profile"
+    ],
+    "doc_filter": "amount > 0",
+    "_id": {
+      "$oid": "6afca5626f20242f69a630b6"
+    }
+  }
+]

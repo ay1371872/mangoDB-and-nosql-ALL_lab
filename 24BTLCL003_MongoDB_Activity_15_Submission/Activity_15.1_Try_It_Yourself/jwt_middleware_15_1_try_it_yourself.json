@@ -1,0 +1,33 @@
+[
+  {
+    "token_user": "ayush@alpha.com",
+    "extracted_tenant": "ORG-ALPHA",
+    "injected_filter": {
+      "tenant_id": "ORG-ALPHA"
+    },
+    "status": "AUTHORIZED",
+    "_id": {
+      "$oid": "6afca58270ecf9677897554a"
+    }
+  },
+  {
+    "token_user": "sneha@beta.com",
+    "extracted_tenant": "ORG-BETA",
+    "injected_filter": {
+      "tenant_id": "ORG-BETA"
+    },
+    "status": "AUTHORIZED",
+    "_id": {
+      "$oid": "6afca58270ecf9677897554b"
+    }
+  },
+  {
+    "token_user": "guest@test.com",
+    "extracted_tenant": "NONE",
+    "injected_filter": "BLOCK",
+    "status": "REJECTED (401 Unauthorized)",
+    "_id": {
+      "$oid": "6afca58270ecf9677897554c"
+    }
+  }
+]

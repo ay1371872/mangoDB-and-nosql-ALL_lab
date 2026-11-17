@@ -1,0 +1,121 @@
+[
+  {
+    "_id": {
+      "$oid": "6abedccc0a7414055671de56"
+    },
+    "title": "Introduction to Programming",
+    "code": "CS101",
+    "instructor": "Dr. Anita Desai",
+    "schedule": {
+      "days": [
+        "Monday",
+        "Wednesday"
+      ],
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "room": "A-101"
+    },
+    "prerequisites": []
+  },
+  {
+    "_id": {
+      "$oid": "6abedccc5a1bb4110171de57"
+    },
+    "title": "Data Structures",
+    "code": "CS201",
+    "instructor": "Dr. Rohan Mehta",
+    "schedule": {
+      "days": [
+        "Tuesday",
+        "Thursday"
+      ],
+      "start_time": "09:00",
+      "end_time": "10:30",
+      "room": "A-102"
+    },
+    "prerequisites": [
+      "CS101"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6abedccc408d30fa1971de58"
+    },
+    "title": "Database Systems",
+    "code": "CS301",
+    "instructor": "Dr. Meera Iyer",
+    "schedule": {
+      "days": [
+        "Monday",
+        "Wednesday"
+      ],
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "room": "B-204"
+    },
+    "prerequisites": [
+      "CS201"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6abedcccd773a85c0f71de59"
+    },
+    "title": "Operating Systems",
+    "code": "CS302",
+    "instructor": "Dr. Rohan Mehta",
+    "schedule": {
+      "days": [
+        "Tuesday",
+        "Friday"
+      ],
+      "start_time": "11:00",
+      "end_time": "12:30",
+      "room": "B-110"
+    },
+    "prerequisites": [
+      "CS201"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6abedccc1d09e961fd71de5a"
+    },
+    "title": "Advanced Database Systems",
+    "code": "CS401",
+    "instructor": "Dr. Meera Iyer",
+    "schedule": {
+      "days": [
+        "Monday",
+        "Wednesday"
+      ],
+      "start_time": "10:00",
+      "end_time": "11:30",
+      "room": "B-204"
+    },
+    "prerequisites": [
+      "CS301"
+    ]
+  },
+  {
+    "_id": {
+      "$oid": "6abedccc30367d870871de5b"
+    },
+    "title": "Distributed Systems",
+    "code": "CS403",
+    "instructor": "Dr. Meera Iyer",
+    "schedule": {
+      "days": [
+        "Monday",
+        "Friday"
+      ],
+      "start_time": "14:00",
+      "end_time": "15:30",
+      "room": "C-305"
+    },
+    "prerequisites": [
+      "CS301",
+      "CS302"
+    ]
+  }
+]

@@ -1,0 +1,23 @@
+[
+  {
+    "backup_id": "BKP-20240315-001",
+    "backup_type": "mongodump --oplog (Point-in-Time Consistent)",
+    "collections_backed_up": [
+      "customers",
+      "orders",
+      "products"
+    ],
+    "total_size_mb": 142.8,
+    "oplog_start": "2024-03-15T00:00:00Z",
+    "oplog_end": "2024-03-15T00:15:32Z",
+    "restore_simulation": {
+      "dropped_collection": "orders",
+      "command_run": "mongorestore --nsInclude='nosql_labs.orders' --drop dump/",
+      "documents_restored": 10500,
+      "integrity_check": "PASSED (100% matched)"
+    },
+    "_id": {
+      "$oid": "6afca57a4a8e17506eb8b6f8"
+    }
+  }
+]

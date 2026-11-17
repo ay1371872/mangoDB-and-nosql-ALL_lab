@@ -1,0 +1,10 @@
+[
+  {
+    "chunk_hash": "5d180cbe3f1293f4959674da693e2453",
+    "text": "MongoDB provides high availability through replica sets. Replica sets maintain multiple copies of data.",
+    "status": "FIRST_INSERT (COMMITTED)",
+    "_id": {
+      "$oid": "6afca6490cb996588431897b"
+    }
+  }
+]

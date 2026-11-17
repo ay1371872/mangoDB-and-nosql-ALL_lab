@@ -1,0 +1,27 @@
+[
+  {
+    "user_id": "USR-1001",
+    "name": "Ayush Yadav",
+    "email": "ayush@example.com",
+    "tier": "Premium",
+    "addresses": [
+      {
+        "type": "Home",
+        "street": "42 Cyber Hub",
+        "city": "Gurugram",
+        "pincode": "122002",
+        "is_default": true
+      },
+      {
+        "type": "Office",
+        "street": "10 Tech Boulevard",
+        "city": "Bengaluru",
+        "pincode": "560100",
+        "is_default": false
+      }
+    ],
+    "_id": {
+      "$oid": "6afca3db63755b6939815b16"
+    }
+  }
+]

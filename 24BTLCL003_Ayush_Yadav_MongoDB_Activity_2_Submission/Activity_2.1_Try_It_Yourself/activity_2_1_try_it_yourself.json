@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "6a95a4f07db505d57c414d9a"
+  },
+  "activity": "2.1",
+  "section": "Try It Yourself",
+  "server": "Docker MongoDB",
+  "version": "8.3.7",
+  "gitVersion": "34eee04f34989abb7a3d91447976f033f4f74af2",
+  "platform": null,
+  "pid": null,
+  "recordedAt": "2026-08-31T21:29:44.772390"
+}]

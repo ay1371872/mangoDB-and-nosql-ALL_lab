@@ -1,0 +1,90 @@
+[
+  {
+    "order_id": "ORD-101",
+    "customer": "Arjun",
+    "region": "North",
+    "total": 2500,
+    "items": 3,
+    "month": "2024-01",
+    "_id": {
+      "$oid": "6afca3a113135e6b327a65a2"
+    }
+  },
+  {
+    "order_id": "ORD-102",
+    "customer": "Sneha",
+    "region": "South",
+    "total": 1800,
+    "items": 1,
+    "month": "2024-01",
+    "_id": {
+      "$oid": "6afca3a113135e6b327a65a3"
+    }
+  },
+  {
+    "order_id": "ORD-103",
+    "customer": "Arjun",
+    "region": "North",
+    "total": 3200,
+    "items": 5,
+    "month": "2024-02",
+    "_id": {
+      "$oid": "6afca3a113135e6b327a65a4"
+    }
+  },
+  {
+    "order_id": "ORD-105",
+    "customer": "Rahul",
+    "region": "West",
+    "total": 5600,
+    "items": 8,
+    "month": "2024-02",
+    "_id": {
+      "$oid": "6afca3a113135e6b327a65a5"
+    }
+  },
+  {
+    "order_id": "ORD-106",
+    "customer": "Arjun",
+    "region": "North",
+    "total": 1200,
+    "items": 2,
+    "month": "2024-02",
+    "_id": {
+      "$oid": "6afca3a113135e6b327a65a6"
+    }
+  },
+  {
+    "order_id": "ORD-107",
+    "customer": "Sneha",
+    "region": "South",
+    "total": 4100,
+    "items": 6,
+    "month": "2024-03",
+    "_id": {
+      "$oid": "6afca3a113135e6b327a65a7"
+    }
+  },
+  {
+    "order_id": "ORD-108",
+    "customer": "Kavya",
+    "region": "East",
+    "total": 2900,
+    "items": 4,
+    "month": "2024-03",
+    "_id": {
+      "$oid": "6afca3a113135e6b327a65a8"
+    }
+  },
+  {
+    "order_id": "ORD-110",
+    "customer": "Divya",
+    "region": "North",
+    "total": 1500,
+    "items": 1,
+    "month": "2024-03",
+    "_id": {
+      "$oid": "6afca3a113135e6b327a65a9"
+    }
+  }
+]

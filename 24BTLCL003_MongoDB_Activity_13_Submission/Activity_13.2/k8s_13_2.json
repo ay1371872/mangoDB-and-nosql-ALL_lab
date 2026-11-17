@@ -1,0 +1,32 @@
+[
+  {
+    "kind": "StatefulSet",
+    "name": "mongo",
+    "replicas": 3,
+    "serviceName": "mongo-service",
+    "storage": "10Gi",
+    "_id": {
+      "$oid": "6afca570494cb081f11e0db7"
+    }
+  },
+  {
+    "kind": "Service (Headless)",
+    "name": "mongo-service",
+    "port": 27017,
+    "clusterIP": "None",
+    "dns": "mongo-{0..2}.mongo-service.default.svc",
+    "_id": {
+      "$oid": "6afca570494cb081f11e0db8"
+    }
+  },
+  {
+    "kind": "PersistentVolumeClaim",
+    "name": "datadir-mongo",
+    "accessMode": "ReadWriteOnce",
+    "storageClass": "fast-ssd",
+    "capacity": "10Gi",
+    "_id": {
+      "$oid": "6afca570494cb081f11e0db9"
+    }
+  }
+]

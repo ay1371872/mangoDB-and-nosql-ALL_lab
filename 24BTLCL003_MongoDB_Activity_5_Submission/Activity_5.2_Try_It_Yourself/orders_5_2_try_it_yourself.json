@@ -1,0 +1,52 @@
+[
+  {
+    "order_id": "ORD-1",
+    "customer_id": "CUST-1",
+    "product_id": "PROD-1",
+    "qty": 2,
+    "amount": 9000,
+    "_id": {
+      "$oid": "6afca3a6649b3e92c6e512f7"
+    }
+  },
+  {
+    "order_id": "ORD-2",
+    "customer_id": "CUST-1",
+    "product_id": "PROD-3",
+    "qty": 1,
+    "amount": 2200,
+    "_id": {
+      "$oid": "6afca3a6649b3e92c6e512f8"
+    }
+  },
+  {
+    "order_id": "ORD-3",
+    "customer_id": "CUST-2",
+    "product_id": "PROD-2",
+    "qty": 1,
+    "amount": 1800,
+    "_id": {
+      "$oid": "6afca3a6649b3e92c6e512f9"
+    }
+  },
+  {
+    "order_id": "ORD-4",
+    "customer_id": "CUST-3",
+    "product_id": "PROD-1",
+    "qty": 1,
+    "amount": 4500,
+    "_id": {
+      "$oid": "6afca3a6649b3e92c6e512fa"
+    }
+  },
+  {
+    "order_id": "ORD-5",
+    "customer_id": "CUST-3",
+    "product_id": "PROD-3",
+    "qty": 3,
+    "amount": 6600,
+    "_id": {
+      "$oid": "6afca3a6649b3e92c6e512fb"
+    }
+  }
+]

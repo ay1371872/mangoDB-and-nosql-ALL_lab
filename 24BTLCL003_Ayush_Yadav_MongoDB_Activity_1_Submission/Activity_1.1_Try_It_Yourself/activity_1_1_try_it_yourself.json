@@ -1,0 +1,40 @@
+[
+  {
+    "_id": {
+      "$oid": "6abedc781802f14b0bc3a398"
+    },
+    "product": "ArangoDB",
+    "primary_family": "Document",
+    "families": [
+      "Document",
+      "Graph",
+      "Key-Value"
+    ],
+    "fits_one_family": false,
+    "reasoning": "ArangoDB is a native multi-model database. JSON documents are its core storage, edges turn them into a graph that is queried with AQL traversals, and the same collections can be read by key like a key-value store."
+  },
+  {
+    "_id": {
+      "$oid": "6abedc78187aa36ad2c3a399"
+    },
+    "product": "ScyllaDB",
+    "primary_family": "Column-Family",
+    "families": [
+      "Column-Family"
+    ],
+    "fits_one_family": true,
+    "reasoning": "ScyllaDB is a Cassandra-compatible wide-column store. Data is partitioned by key into rows with column families, tuned for very high write throughput and low latency."
+  },
+  {
+    "_id": {
+      "$oid": "6abedc7820fd942145c3a39a"
+    },
+    "product": "InfluxDB",
+    "primary_family": "Time-Series (closest: Column-Family)",
+    "families": [
+      "Column-Family"
+    ],
+    "fits_one_family": false,
+    "reasoning": "InfluxDB is built for timestamped measurements with tags and fields, stored column-wise. It is closest to column-family but is a specialised time-series model that does not fit neatly into the four classic families."
+  }
+]

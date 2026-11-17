@@ -1,0 +1,26 @@
+[
+  {
+    "algorithm": "HNSW (Hierarchical Navigable Small World)",
+    "build_time_s": 42.5,
+    "ram_overhead_mb": 1850,
+    "recall_at_10": 0.985,
+    "query_latency_ms": 1.45,
+    "qps": 680,
+    "verdict": "Highest recall and fastest search; higher RAM requirements",
+    "_id": {
+      "$oid": "6afca6341af942a699b14215"
+    }
+  },
+  {
+    "algorithm": "IVF (Inverted File Index)",
+    "build_time_s": 8.2,
+    "ram_overhead_mb": 420,
+    "recall_at_10": 0.912,
+    "query_latency_ms": 4.8,
+    "qps": 210,
+    "verdict": "Low memory footprint and fast build time; lower recall under load",
+    "_id": {
+      "$oid": "6afca6341af942a699b14216"
+    }
+  }
+]

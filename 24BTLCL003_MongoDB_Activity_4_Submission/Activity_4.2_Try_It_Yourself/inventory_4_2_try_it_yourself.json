@@ -1,0 +1,55 @@
+[{
+  "_id": {
+    "$oid": "6aa161baa48d4a604f5597d7"
+  },
+  "sku": "IMP-001",
+  "category": "Electronics",
+  "is_active": true,
+  "name": "Smartphone X",
+  "price": 699.99,
+  "stock": 50
+},
+{
+  "_id": {
+    "$oid": "6aa161baa48d4a604f5597d8"
+  },
+  "sku": "IMP-002",
+  "category": "Audio",
+  "is_active": true,
+  "name": "Wireless Earbuds",
+  "price": 89.99,
+  "stock": 100
+},
+{
+  "_id": {
+    "$oid": "6aa161baa48d4a604f5597d9"
+  },
+  "sku": "IMP-003",
+  "category": "Accessories",
+  "is_active": true,
+  "name": "Gaming Keyboard",
+  "price": 129.99,
+  "stock": 40
+},
+{
+  "_id": {
+    "$oid": "6aa161baa48d4a604f5597da"
+  },
+  "sku": "IMP-004",
+  "category": "Monitors",
+  "is_active": true,
+  "name": "Smart Monitor",
+  "price": 349.99,
+  "stock": 25
+},
+{
+  "_id": {
+    "$oid": "6aa161baa48d4a604f5597db"
+  },
+  "sku": "IMP-005",
+  "category": "Accessories",
+  "is_active": true,
+  "name": "USB-C Charger",
+  "price": 39.99,
+  "stock": 150
+}]

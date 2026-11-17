@@ -1,0 +1,20 @@
+[
+  {
+    "collection": "orders",
+    "pre_backup_sha256": "e3b0c44298fc1c149afbf4c8996fb924",
+    "post_restore_sha256": "e3b0c44298fc1c149afbf4c8996fb924",
+    "match": true,
+    "_id": {
+      "$oid": "6afca57d55107824e551981d"
+    }
+  },
+  {
+    "collection": "customers",
+    "pre_backup_sha256": "f5a7924e321e84c241174cb97e10d050",
+    "post_restore_sha256": "f5a7924e321e84c241174cb97e10d050",
+    "match": true,
+    "_id": {
+      "$oid": "6afca57d55107824e551981e"
+    }
+  }
+]

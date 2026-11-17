@@ -1,0 +1,141 @@
+[
+  {
+    "_id": 1,
+    "title": "Getting Started with MongoDB",
+    "author": "Neha Kapoor",
+    "tags": [
+      "mongodb",
+      "basics"
+    ],
+    "created_at": {
+      "$date": "2026-09-01T09:00:00.000Z"
+    },
+    "comments": [
+      {
+        "author": "Rahul",
+        "text": "Great introduction, very clear!",
+        "created_at": {
+          "$date": "2026-09-01T12:00:00.000Z"
+        }
+      },
+      {
+        "author": "Priya",
+        "text": "Helped me set up my first database.",
+        "created_at": {
+          "$date": "2026-09-01T15:30:00.000Z"
+        }
+      },
+      {
+        "author": "Imran",
+        "text": "Could you cover Compass next?",
+        "created_at": {
+          "$date": "2026-09-02T08:10:00.000Z"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 2,
+    "title": "Schema Design Patterns",
+    "author": "Arjun Rao",
+    "tags": [
+      "schema",
+      "design"
+    ],
+    "created_at": {
+      "$date": "2026-09-03T10:30:00.000Z"
+    },
+    "comments": [
+      {
+        "author": "Priya",
+        "text": "Embedding vs referencing finally makes sense.",
+        "created_at": {
+          "$date": "2026-09-03T13:00:00.000Z"
+        }
+      },
+      {
+        "author": "Karan",
+        "text": "What about the bucket pattern?",
+        "created_at": {
+          "$date": "2026-09-04T09:20:00.000Z"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 3,
+    "title": "Understanding Indexes",
+    "author": "Neha Kapoor",
+    "tags": [
+      "indexes",
+      "performance"
+    ],
+    "created_at": {
+      "$date": "2026-09-05T14:15:00.000Z"
+    },
+    "comments": [
+      {
+        "author": "Rahul",
+        "text": "The compound index tip saved me.",
+        "created_at": {
+          "$date": "2026-09-05T18:00:00.000Z"
+        }
+      },
+      {
+        "author": "Sneha",
+        "text": "Please explain index intersection.",
+        "created_at": {
+          "$date": "2026-09-06T10:45:00.000Z"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 4,
+    "title": "Aggregation Pipeline Basics",
+    "author": "Sana Khan",
+    "tags": [
+      "aggregation"
+    ],
+    "created_at": {
+      "$date": "2026-09-08T11:00:00.000Z"
+    },
+    "comments": [
+      {
+        "author": "Imran",
+        "text": "$lookup examples were helpful.",
+        "created_at": {
+          "$date": "2026-09-08T14:00:00.000Z"
+        }
+      },
+      {
+        "author": "Karan",
+        "text": "More on $group please.",
+        "created_at": {
+          "$date": "2026-09-09T07:30:00.000Z"
+        }
+      }
+    ]
+  },
+  {
+    "_id": 5,
+    "title": "Replication and Sharding Explained",
+    "author": "Arjun Rao",
+    "tags": [
+      "replication",
+      "sharding"
+    ],
+    "created_at": {
+      "$date": "2026-09-10T16:45:00.000Z"
+    },
+    "comments": [
+      {
+        "author": "Sneha",
+        "text": "Clear explanation of shard keys.",
+        "created_at": {
+          "$date": "2026-09-11T09:05:00.000Z"
+        }
+      }
+    ]
+  }
+]

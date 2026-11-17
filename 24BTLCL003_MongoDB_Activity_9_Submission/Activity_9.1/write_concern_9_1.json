@@ -1,0 +1,32 @@
+[
+  {
+    "write_concern": "w:1",
+    "journal": false,
+    "avg_latency_ms": 1.45,
+    "ops_per_sec": 689,
+    "durability": "Acknowledged by Primary memory only; vulnerable to power loss",
+    "_id": {
+      "$oid": "6afca49dc0e8d4bb0f31c63d"
+    }
+  },
+  {
+    "write_concern": "w:majority",
+    "journal": false,
+    "avg_latency_ms": 6.8,
+    "ops_per_sec": 147,
+    "durability": "Committed to majority of nodes; safe against single-node crashes",
+    "_id": {
+      "$oid": "6afca49dc0e8d4bb0f31c63e"
+    }
+  },
+  {
+    "write_concern": "w:majority",
+    "journal": true,
+    "avg_latency_ms": 18.5,
+    "ops_per_sec": 54,
+    "durability": "Flushed to journal on majority nodes; maximum crash durability",
+    "_id": {
+      "$oid": "6afca49dc0e8d4bb0f31c63f"
+    }
+  }
+]

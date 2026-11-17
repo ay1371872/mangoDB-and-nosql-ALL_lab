@@ -1,0 +1,62 @@
+[
+  {
+    "_id": {
+      "$oid": "6abedc7823e5496b2283b618"
+    },
+    "product": "Amazon S3",
+    "family": "Key-Value",
+    "reasoning": "Objects are stored and fetched by a unique object key, and there is no way to query inside the object's contents.",
+    "use_case": "Storing and serving user-uploaded photos and videos for a media-sharing website.",
+    "why_best": "Access is always by key, objects are large and opaque, and S3 gives near-unlimited size with high durability.",
+    "best_for": "Large binary objects, backups, static assets",
+    "limitation": "No queries or indexes on object contents"
+  },
+  {
+    "_id": {
+      "$oid": "6abedc782d04378c1483b619"
+    },
+    "product": "Couchbase",
+    "family": "Document",
+    "reasoning": "It stores JSON documents and supports secondary indexes and SQL-like (N1QL) queries on document fields.",
+    "use_case": "Product catalog and user-profile store for an e-commerce site.",
+    "why_best": "Each product or profile is a self-contained JSON document, the schema evolves often, and a built-in cache keeps reads fast.",
+    "best_for": "Flexible JSON data with low-latency access",
+    "limitation": "Complex joins and deep relationship queries are weak"
+  },
+  {
+    "_id": {
+      "$oid": "6abedc783d5501e6cf83b61a"
+    },
+    "product": "Apache HBase",
+    "family": "Column-Family",
+    "reasoning": "Data is organised into column families inside wide, sparse rows that can hold millions of columns.",
+    "use_case": "Storing billions of time-stamped sensor readings from IoT devices.",
+    "why_best": "Writes are very heavy, rows are sparse, and reads are mostly row-key range scans which HBase handles well.",
+    "best_for": "Massive, write-heavy, sparse, time-series data",
+    "limitation": "Efficient only for row-key access; no rich queries"
+  },
+  {
+    "_id": {
+      "$oid": "6abedc78e5d14d804f83b61b"
+    },
+    "product": "Amazon Neptune",
+    "family": "Graph",
+    "reasoning": "It is purpose-built to store and query property-graph and RDF data using Gremlin, openCypher and SPARQL.",
+    "use_case": "Fraud detection by traversing links between accounts, devices and addresses.",
+    "why_best": "Finding fraud rings needs multi-hop traversals that would need many expensive joins in other families.",
+    "best_for": "Highly connected data and relationship traversal",
+    "limitation": "Single writer node limits write scaling"
+  },
+  {
+    "_id": {
+      "$oid": "6abedc78fb87d1b62c83b61c"
+    },
+    "product": "Memcached",
+    "family": "Key-Value",
+    "reasoning": "It maps string keys to opaque byte values held in memory, with no query capability at all.",
+    "use_case": "Caching rendered web pages and database query results for a high-traffic website.",
+    "why_best": "Pure in-memory key lookups give sub-millisecond latency and take load off the main database.",
+    "best_for": "Ultra-fast, volatile caching",
+    "limitation": "No persistence, replication or querying"
+  }
+]

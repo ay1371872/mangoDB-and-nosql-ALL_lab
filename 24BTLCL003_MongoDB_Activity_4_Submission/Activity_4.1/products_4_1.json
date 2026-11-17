@@ -1,0 +1,171 @@
+[{
+  "_id": {
+    "$oid": "6aa0dce531adf67f46a6e38f"
+  },
+  "sku": "PROD-A",
+  "name": "Wireless Headphones",
+  "price": 49.99,
+  "stock": 25,
+  "tags": [
+    "electronics",
+    "wireless"
+  ],
+  "category": "Audio"
+},
+{
+  "_id": {
+    "$oid": "6aa0dce531adf67f46a6e390"
+  },
+  "sku": "PROD-B",
+  "name": "Bluetooth Speaker",
+  "price": 35.99,
+  "stock": 40,
+  "tags": [
+    "electronics",
+    "wireless",
+    "audio"
+  ],
+  "category": "Audio"
+},
+{
+  "_id": {
+    "$oid": "6aa0dce531adf67f46a6e391"
+  },
+  "sku": "PROD-C",
+  "name": "Mechanical Keyboard",
+  "price": 89.99,
+  "stock": 15,
+  "tags": [
+    "electronics",
+    "mechanical"
+  ],
+  "category": "Keyboards"
+},
+{
+  "_id": {
+    "$oid": "6aa0dce531adf67f46a6e392"
+  },
+  "sku": "PROD-D",
+  "name": "Gaming Mouse",
+  "price": 29.99,
+  "stock": 0,
+  "tags": [
+    "electronics",
+    "wireless"
+  ],
+  "category": "Accessories"
+},
+{
+  "_id": {
+    "$oid": "6aa0dce531adf67f46a6e393"
+  },
+  "sku": "PROD-E",
+  "name": "4K Monitor",
+  "price": 299.99,
+  "stock": 8,
+  "tags": [
+    "electronics",
+    "premium"
+  ],
+  "category": "Monitors"
+},
+{
+  "_id": {
+    "$oid": "6aa0dce531adf67f46a6e394"
+  },
+  "sku": "PROD-F",
+  "name": "Gaming Laptop",
+  "price": 1299.99,
+  "stock": 5,
+  "tags": [
+    "electronics",
+    "premium",
+    "gaming"
+  ],
+  "category": "Laptops"
+},
+{
+  "_id": {
+    "$oid": "6aa0dce531adf67f46a6e395"
+  },
+  "sku": "PROD-G",
+  "name": "USB-C Hub",
+  "price": 24.99,
+  "stock": 60,
+  "tags": [
+    "electronics",
+    "accessory"
+  ],
+  "category": "Accessories"
+},
+{
+  "_id": {
+    "$oid": "6aa0dce531adf67f46a6e396"
+  },
+  "sku": "PROD-H",
+  "name": "Smart Watch",
+  "price": 199.99,
+  "stock": 0,
+  "tags": [
+    "electronics",
+    "wireless",
+    "premium"
+  ],
+  "category": "Wearables"
+},
+{
+  "_id": {
+    "$oid": "6aa0dce531adf67f46a6e397"
+  },
+  "sku": "PROD-I",
+  "name": "Laptop Stand",
+  "price": 45,
+  "stock": 20,
+  "tags": [
+    "office",
+    "ergonomic"
+  ],
+  "category": "Office"
+},
+{
+  "_id": {
+    "$oid": "6aa0dce531adf67f46a6e398"
+  },
+  "sku": "PROD-J",
+  "name": "Wireless Charger",
+  "price": 39.99,
+  "stock": 35,
+  "tags": [
+    "electronics",
+    "wireless"
+  ],
+  "category": "Accessories"
+},
+{
+  "_id": {
+    "$oid": "6aa0dce531adf67f46a6e399"
+  },
+  "sku": "PROD-K",
+  "name": "Premium Webcam",
+  "price": 149.99,
+  "stock": 12,
+  "tags": [
+    "electronics",
+    "premium"
+  ],
+  "category": "Cameras"
+},
+{
+  "_id": {
+    "$oid": "6aa0dce531adf67f46a6e39a"
+  },
+  "sku": "PROD-L",
+  "name": "Desk Lamp",
+  "price": 19.99,
+  "stock": 0,
+  "tags": [
+    "office",
+    "lighting"
+  ],
+  "category": "Office"
+}]

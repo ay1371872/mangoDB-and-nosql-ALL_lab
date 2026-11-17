@@ -1,0 +1,112 @@
+[
+  {
+    "product_id": "P-0001",
+    "name": "Product Item 1",
+    "category": "Monitors",
+    "price": 117.0,
+    "stock": 7,
+    "rating": 3.1,
+    "_id": {
+      "$oid": "6afca3afab1a11cd5ff1122e"
+    }
+  },
+  {
+    "product_id": "P-0002",
+    "name": "Product Item 2",
+    "category": "Keyboards",
+    "price": 134.0,
+    "stock": 14,
+    "rating": 3.2,
+    "_id": {
+      "$oid": "6afca3afab1a11cd5ff1122f"
+    }
+  },
+  {
+    "product_id": "P-0003",
+    "name": "Product Item 3",
+    "category": "Audio",
+    "price": 151.0,
+    "stock": 21,
+    "rating": 3.3,
+    "_id": {
+      "$oid": "6afca3afab1a11cd5ff11230"
+    }
+  },
+  {
+    "product_id": "P-0004",
+    "name": "Product Item 4",
+    "category": "Cables",
+    "price": 168.0,
+    "stock": 28,
+    "rating": 3.4,
+    "_id": {
+      "$oid": "6afca3afab1a11cd5ff11231"
+    }
+  },
+  {
+    "product_id": "P-0005",
+    "name": "Product Item 5",
+    "category": "Laptops",
+    "price": 185.0,
+    "stock": 35,
+    "rating": 3.5,
+    "_id": {
+      "$oid": "6afca3afab1a11cd5ff11232"
+    }
+  },
+  {
+    "product_id": "P-0006",
+    "name": "Product Item 6",
+    "category": "Monitors",
+    "price": 202.0,
+    "stock": 42,
+    "rating": 3.6,
+    "_id": {
+      "$oid": "6afca3afab1a11cd5ff11233"
+    }
+  },
+  {
+    "product_id": "P-0007",
+    "name": "Product Item 7",
+    "category": "Keyboards",
+    "price": 219.0,
+    "stock": 49,
+    "rating": 3.7,
+    "_id": {
+      "$oid": "6afca3afab1a11cd5ff11234"
+    }
+  },
+  {
+    "product_id": "P-0008",
+    "name": "Product Item 8",
+    "category": "Audio",
+    "price": 236.0,
+    "stock": 6,
+    "rating": 3.8,
+    "_id": {
+      "$oid": "6afca3afab1a11cd5ff11235"
+    }
+  },
+  {
+    "product_id": "P-0009",
+    "name": "Product Item 9",
+    "category": "Cables",
+    "price": 253.0,
+    "stock": 13,
+    "rating": 3.9,
+    "_id": {
+      "$oid": "6afca3afab1a11cd5ff11236"
+    }
+  },
+  {
+    "product_id": "P-0010",
+    "name": "Product Item 10",
+    "category": "Laptops",
+    "price": 270.0,
+    "stock": 20,
+    "rating": 4.0,
+    "_id": {
+      "$oid": "6afca3afab1a11cd5ff11237"
+    }
+  }
+]

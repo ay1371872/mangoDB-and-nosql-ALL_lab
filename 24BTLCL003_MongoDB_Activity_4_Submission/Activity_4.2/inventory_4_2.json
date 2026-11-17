@@ -1,0 +1,60 @@
+[{
+  "_id": {
+    "$oid": "6aa15f87214d76b29a279dbe"
+  },
+  "sku": "A",
+  "name": "Wireless Headphones",
+  "price": 44.99,
+  "stock": 60,
+  "is_active": true
+},
+{
+  "_id": {
+    "$oid": "6aa15f87214d76b29a279dbf"
+  },
+  "sku": "B",
+  "name": "Bluetooth Speaker",
+  "price": 79.99,
+  "stock": 50,
+  "is_active": true
+},
+{
+  "_id": {
+    "$oid": "6aa15f87214d76b29a279dc0"
+  },
+  "sku": "C",
+  "name": "Mechanical Keyboard",
+  "price": 89.99,
+  "stock": 40,
+  "is_active": true
+},
+{
+  "_id": {
+    "$oid": "6aa15f87214d76b29a279dc1"
+  },
+  "sku": "D",
+  "name": "Gaming Mouse",
+  "price": 39.99,
+  "stock": 25,
+  "is_active": false
+},
+{
+  "_id": {
+    "$oid": "6aa15f87214d76b29a279dc2"
+  },
+  "sku": "E",
+  "name": "USB-C Hub",
+  "price": 29.99,
+  "stock": 60,
+  "is_active": false
+},
+{
+  "_id": {
+    "$oid": "6aa15f87a48d4a604f5597d1"
+  },
+  "sku": "F",
+  "is_active": true,
+  "name": "New Product",
+  "price": 59.99,
+  "stock": 0
+}]

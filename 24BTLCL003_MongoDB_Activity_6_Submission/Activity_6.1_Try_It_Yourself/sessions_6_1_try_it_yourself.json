@@ -1,0 +1,52 @@
+[
+  {
+    "session_id": "SES-101",
+    "user": "Arjun",
+    "status": "active",
+    "ip": "192.168.1.10",
+    "ttl_seconds": 3600,
+    "_id": {
+      "$oid": "6afca3ac0d8ac6746dffe963"
+    }
+  },
+  {
+    "session_id": "SES-102",
+    "user": "Sneha",
+    "status": "expired",
+    "ip": "192.168.1.12",
+    "ttl_seconds": 0,
+    "_id": {
+      "$oid": "6afca3ac0d8ac6746dffe964"
+    }
+  },
+  {
+    "session_id": "SES-103",
+    "user": "Rahul",
+    "status": "active",
+    "ip": "192.168.1.15",
+    "ttl_seconds": 1800,
+    "_id": {
+      "$oid": "6afca3ac0d8ac6746dffe965"
+    }
+  },
+  {
+    "session_id": "SES-104",
+    "user": "Kavya",
+    "status": "abandoned",
+    "ip": "192.168.1.20",
+    "ttl_seconds": 0,
+    "_id": {
+      "$oid": "6afca3ac0d8ac6746dffe966"
+    }
+  },
+  {
+    "session_id": "SES-105",
+    "user": "Divya",
+    "status": "active",
+    "ip": "192.168.1.25",
+    "ttl_seconds": 7200,
+    "_id": {
+      "$oid": "6afca3ac0d8ac6746dffe967"
+    }
+  }
+]

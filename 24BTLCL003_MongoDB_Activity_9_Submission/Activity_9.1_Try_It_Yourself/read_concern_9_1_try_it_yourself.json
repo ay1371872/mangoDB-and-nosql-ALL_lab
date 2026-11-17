@@ -1,0 +1,26 @@
+[
+  {
+    "read_concern": "local",
+    "dirty_read_risk": "Possible if uncommitted write rolls back",
+    "latency_ms": 0.95,
+    "_id": {
+      "$oid": "6afca4a0b7df6c499dff901a"
+    }
+  },
+  {
+    "read_concern": "majority",
+    "dirty_read_risk": "None - Returns only majority-committed data",
+    "latency_ms": 1.45,
+    "_id": {
+      "$oid": "6afca4a0b7df6c499dff901b"
+    }
+  },
+  {
+    "read_concern": "linearizable",
+    "dirty_read_risk": "Zero - Guarantees real-time serializability",
+    "latency_ms": 4.1,
+    "_id": {
+      "$oid": "6afca4a0b7df6c499dff901c"
+    }
+  }
+]

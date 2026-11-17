@@ -1,0 +1,32 @@
+[
+  {
+    "metric": "connection_pool",
+    "value": "88%",
+    "threshold": "80%",
+    "level": "WARNING",
+    "message": "Connection pool usage exceeded safe threshold.",
+    "_id": {
+      "$oid": "6afca578de0a3cdb3efdb4e2"
+    }
+  },
+  {
+    "metric": "dirty_cache_pct",
+    "value": "18.5%",
+    "threshold": "20%",
+    "level": "NORMAL",
+    "message": "Eviction threads keeping pace with writes.",
+    "_id": {
+      "$oid": "6afca578de0a3cdb3efdb4e3"
+    }
+  },
+  {
+    "metric": "slow_query_count",
+    "value": "14/m",
+    "threshold": "5/m",
+    "level": "CRITICAL",
+    "message": "Spike in unindexed table scans detected!",
+    "_id": {
+      "$oid": "6afca578de0a3cdb3efdb4e4"
+    }
+  }
+]
