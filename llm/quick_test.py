@@ -32,6 +32,7 @@ def show_menu():
     print("  [5] 📜 View MongoDB Audit Trail Log")
     print("  [6] 🔄 Re-seed Threat Intelligence Database")
     print("  [7] 🚀 Run Full Automated End-to-End Demo")
+    print("  [8] ⚡ Feed & Benchmark 100,000 Parameters in MongoDB")
     print("  [0] ❌ Exit")
     print("-" * 70)
 
@@ -172,11 +173,14 @@ def main():
         elif choice == "7":
             import run_demo
             run_demo.run_full_demonstration()
+        elif choice == "8":
+            import feed_100k_parameters
+            feed_100k_parameters.feed_100k_parameters_to_mongodb()
         elif choice == "0":
             print("\nExiting. Good luck with your presentation, Ayush!\n")
             break
         else:
-            print("[!] Invalid option. Please enter 0 to 7.")
+            print("[!] Invalid option. Please enter 0 to 8.")
 
 
 if __name__ == "__main__":

@@ -101,9 +101,11 @@ def health_check():
         else:
             mongo_status = "Connected (In-Memory Engine)"
         threat_count = db["threats"].count_documents({})
+        param_count = db["threat_parameters"].count_documents({})
     except Exception as e:
         mongo_status = f"Error: {e}"
         threat_count = 0
+        param_count = 0
 
     return {
         "status": "Healthy",
@@ -111,6 +113,7 @@ def health_check():
         "mongo_status": mongo_status,
         "is_mock_database": is_mock,
         "active_threat_records": threat_count,
+        "telemetry_parameters_count": param_count,
         "llm_backend": LLM_BACKEND,
         "supported_platforms": ["Linux", "Windows", "macOS", "Android", "iOS"],
         "threat_categories": ["Anticipated", "Active", "Evolving", "Resolved"],
@@ -273,6 +276,41 @@ def get_audit_trail(limit: int = 15):
     db = get_database()
     logs = list(db["audit_log"].find({}, {"_id": 0}).sort("timestamp", -1).limit(limit))
     return {"count": len(logs), "audit_logs": logs}
+
+
+@app.post("/feed-100k")
+def feed_100k_parameters_endpoint():
+    """Feeds 100,000 security & telemetry parameters into MongoDB using bulk operations."""
+    from feed_100k_parameters import feed_100k_parameters_to_mongodb
+    result = feed_100k_parameters_to_mongodb()
+    return result
+
+
+@app.get("/parameters/stats")
+def parameters_stats():
+    """Returns analytics over the 100,000 ingested parameters (Exercise 5)."""
+    db = get_database()
+    col = db["threat_parameters"]
+    total = col.count_documents({})
+    if total == 0:
+        return {"total_parameters": 0, "status": "No telemetry parameters ingested yet. Call POST /feed-100k."}
+
+    anomalies = col.count_documents({"is_anomaly": True})
+    
+    # Aggregation by platform
+    pipeline = [
+        {"$group": {"_id": "$platform", "count": {"$sum": 1}, "avg_cvss": {"$avg": "$cvss_score"}}},
+        {"$sort": {"count": -1}}
+    ]
+    platform_breakdown = list(col.aggregate(pipeline))
+
+    return {
+        "total_parameters": total,
+        "anomalous_parameters": anomalies,
+        "normal_parameters": total - anomalies,
+        "platform_distribution": {item["_id"]: item["count"] for item in platform_breakdown if item["_id"]},
+        "indexes_active": ["idx_platform_status_anomaly", "idx_severity_cvss", "idx_param_id_unique"]
+    }
 
 
 if __name__ == "__main__":

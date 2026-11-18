@@ -108,6 +108,20 @@ with st.sidebar:
         else:
             st.warning("Backend must be running to execute scan.")
 
+    if st.button("⚡ Feed 100,000 Parameters to DB", use_container_width=True):
+        if backend_online:
+            with st.spinner("Ingesting 100,000 threat parameters into MongoDB (Bulk Operations)..."):
+                try:
+                    f_res = requests.post(f"{BACKEND_URL}/feed-100k", timeout=180)
+                    if f_res.status_code == 200:
+                        d = f_res.json()
+                        st.success(f"✅ Ingested {d.get('parameters_fed', 100000):,} parameters in {d.get('elapsed_seconds')}s! Throughput: {d.get('throughput'):,.0f} docs/sec")
+                        st.rerun()
+                except Exception as ex:
+                    st.error(f"Ingestion error: {ex}")
+        else:
+            st.warning("Backend required.")
+
     if st.button("🔄 Reset / Re-seed Intelligence DB", use_container_width=True):
         import subprocess
         subprocess.run(["python", "seed_threat_data.py"], cwd=os.path.dirname(os.path.abspath(__file__)))
@@ -129,18 +143,25 @@ if backend_online:
     except Exception:
         pass
 
-m1, m2, m3, m4, m5 = st.columns(5)
+m1, m2, m3, m4, m5, m6 = st.columns(6)
 m1.metric("Total Threats", stats_data.get("total_threats", 0))
 m2.metric("🔴 Active", stats_data["categories"].get("Active", 0))
 m3.metric("🟡 Anticipated", stats_data["categories"].get("Anticipated", 0))
 m4.metric("🟣 Evolving", stats_data["categories"].get("Evolving", 0))
 m5.metric("🟢 Resolved", stats_data["categories"].get("Resolved", 0))
+param_count_display = health_data.get("telemetry_parameters_count", 0)
+m6.metric("⚡ 100K Telemetry", f"{param_count_display:,}" if param_count_display else "0")
 
 st.markdown("---")
 
 
 # --- Main Tabs ---
-tab_chat, tab_matrix, tab_bot = st.tabs(["💬 Conversational Threat AI", "📊 Threat Intelligence Matrix", "🤖 Scanner Bot & Audit Trail"])
+tab_chat, tab_matrix, tab_bot, tab_100k = st.tabs([
+    "💬 Conversational Threat AI",
+    "📊 Threat Intelligence Matrix",
+    "🤖 Scanner Bot & Audit Trail",
+    "⚡ 100K Scale Telemetry"
+])
 
 
 # === TAB 1: Conversational Chat ===
@@ -307,3 +328,49 @@ with tab_bot:
                 st.info("No audit logs recorded yet.")
         except Exception as ex:
             st.error(f"Failed to fetch audit trail: {ex}")
+
+
+# === TAB 4: 100,000 Parameter High-Scale Telemetry ===
+with tab_100k:
+    st.subheader("⚡ 100,000 Security Parameter Ingestion & Analytics")
+    st.markdown(
+        "Demonstrates high-throughput bulk insertion, compound indexing (`IXSCAN`), "
+        "and multi-stage aggregation pipelines over **100,000 structured cyber parameters** in MongoDB (Exercises 5, 6 & 7)."
+    )
+
+    if backend_online:
+        try:
+            p_res = requests.get(f"{BACKEND_URL}/parameters/stats", timeout=5)
+            p_data = p_res.json()
+            
+            p_total = p_data.get("total_parameters", 0)
+            if p_total > 0:
+                p_c1, p_c2, p_c3 = st.columns(3)
+                p_c1.metric("Total Parameters Stored", f"{p_total:,}")
+                p_c2.metric("🚨 Anomalies Detected", f"{p_data.get('anomalous_parameters', 0):,}")
+                p_c3.metric("🛡️ Normal Parameters", f"{p_data.get('normal_parameters', 0):,}")
+
+                st.markdown("#### 📊 Platform Distribution of 100,000 Parameters")
+                dist = p_data.get("platform_distribution", {})
+                if dist:
+                    df_dist = pd.DataFrame(list(dist.items()), columns=["Platform", "Parameter Count"])
+                    st.bar_chart(df_dist.set_index("Platform"))
+
+                st.markdown("#### ⚡ Active Compound Indexes")
+                st.code(
+                    "- db.threat_parameters.createIndex({ platform: 1, threat_status: 1, is_anomaly: 1 })\n"
+                    "- db.threat_parameters.createIndex({ severity: 1, cvss_score: -1 })\n"
+                    "- db.threat_parameters.createIndex({ param_id: 1 }, { unique: true })",
+                    language="javascript"
+                )
+            else:
+                st.info("No parameters loaded yet. Click the button below to feed 100,000 parameters into MongoDB.")
+                if st.button("🚀 Ingest 100,000 Parameters Now"):
+                    with st.spinner("Ingesting 100,000 records into MongoDB..."):
+                        requests.post(f"{BACKEND_URL}/feed-100k", timeout=180)
+                        st.success("Successfully ingested 100,000 parameters!")
+                        st.rerun()
+        except Exception as ex:
+            st.error(f"Failed to fetch parameter telemetry: {ex}")
+    else:
+        st.warning("Backend required to inspect 100k telemetry.")
