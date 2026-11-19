@@ -1,4 +1,4 @@
-﻿# PowerShell Script to Launch Dockerized Threat Intelligence Platform
+# PowerShell Script to Launch Dockerized Threat Intelligence Platform
 # Course: 23CSE528 - NoSQL Databases using MongoDB
 # Author: Ayush Yadav (USN: 24BTLCL003)
 
