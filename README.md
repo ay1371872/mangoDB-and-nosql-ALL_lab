@@ -1,57 +1,56 @@
-# NoSQL Databases using MongoDB (23CSE528)
-## Complete Lab Curriculum (Activities 1–18) & Threat Intelligence AI Capstone
+# JAIN (Deemed-to-be University), Bengaluru
+## Faculty of Engineering and Technology — School of CSE
+### Course Code: 23CSE528 — NoSQL Databases using MongoDB
+# 📚 Complete Lab Experiments Repository (Activities 1 – 18)
 
-**Institution:** School of CSE, Faculty of Engineering and Technology, JAIN (Deemed-to-be University), Bengaluru  
-**Student Name:** Ayush Yadav  
-**USN:** 24BTLCL003  
-**Programme:** B.Tech — Computer Science & Engineering (AIML) - 4th Semester (Section B)  
-**Faculty Guide:** Prof. Sujeet S Jagtap  
-
----
-
-## 📂 Repository Navigation
-
-This repository contains two major components:
-
-1. **Master Lab Experiments Report (Activities 1 to 18)**:
-   - Word Document (`.docx`): [24BTLCL003_Ayush_Yadav_MongoDB_Complete_Lab_Report_1_to_18.docx](file:///d:/mangoDB%20and%20no%20sql/24BTLCL003_Ayush_Yadav_MongoDB_Complete_Lab_Report_1_to_18.docx)
-   - Markdown Document (`.md`): [24BTLCL003_Ayush_Yadav_MongoDB_Complete_Lab_Report_1_to_18.md](file:///d:/mangoDB%20and%20no%20sql/24BTLCL003_Ayush_Yadav_MongoDB_Complete_Lab_Report_1_to_18.md)
-   - Individual Activity Submission Packages: `24BTLCL003_MongoDB_Activity_5_Submission` through `18_Submission` and `Appendix_A_Submission`.
-
-2. **LLM/SLM Cyber Threat Intelligence & Autonomous Remediation Platform**:
-   - Location: [llm/](file:///d:/mangoDB%20and%20no%20sql/llm)
-   - Presentation Guide for Lecturer: [llm/presentation.md](file:///d:/mangoDB%20and%20no%20sql/llm/presentation.md)
-   - Step-by-Step Run Guide: [llm/HOW_TO_RUN.md](file:///d:/mangoDB%20and%20no%20sql/llm/HOW_TO_RUN.md)
-   - Full Documentation: [llm/README.md](file:///d:/mangoDB%20and%20no%20sql/llm/README.md)
+| Student Name | USN | Programme | Semester / Section | Faculty Guide |
+|---|---|---|---|---|
+| **Ayush Yadav** | **24BTLCL003** | **B.Tech CSE (AIML)** | **4th Semester / AIML - B** | **Prof. Sujeet S Jagtap** |
 
 ---
 
-## ⚡ How to Run the Threat Intelligence AI Platform
+> ### 🚀 Associated Capstone Project:
+> The LLM/SLM Cyber Threat Intelligence & Autonomous Remediation Platform has been separated into its own dedicated repository:  
+> 👉 **[https://github.com/ay1371872/mangoDB-and-nosql24btlcl003](https://github.com/ay1371872/mangoDB-and-nosql24btlcl003)**
 
-### Option 1: Fast Interactive Console Test (Zero Setup)
-```powershell
-cd "d:\mangoDB and no sql\llm"
-python quick_test.py
-```
-Provides an interactive menu to query AI, audit machine vulnerabilities, mitigate threats via ACID transactions, and inspect MongoDB audit logs.
+---
 
-### Option 2: Full Web Browser GUI (Streamlit + FastAPI)
-In Terminal 1 (Backend API):
-```powershell
-cd "d:\mangoDB and no sql\llm"
-uvicorn threat_intel_api:app --reload --port 8000
-```
+## 📑 Consolidated Master Lab Reports
 
-In Terminal 2 (Frontend Dashboard):
-```powershell
-cd "d:\mangoDB and no sql\llm"
-streamlit run streamlit_app.py --server.port 8501
-```
-Open your browser to: **`http://localhost:8501`**
+- **Official Word Document (`.docx`)** with Jain University front page & signatures:  
+  📄 **[24BTLCL003_Ayush_Yadav_MongoDB_Complete_Lab_Report_1_to_18.docx](24BTLCL003_Ayush_Yadav_MongoDB_Complete_Lab_Report_1_to_18.docx)**
+- **Complete Markdown Document (`.md`)**:  
+  📝 **[24BTLCL003_Ayush_Yadav_MongoDB_Complete_Lab_Report_1_to_18.md](24BTLCL003_Ayush_Yadav_MongoDB_Complete_Lab_Report_1_to_18.md)**
 
-### Option 3: Automated 8-Phase Benchmark
-```powershell
-cd "d:\mangoDB and no sql\llm"
-python run_demo.py
-```
-Validates all 18 curriculum exercises in sequence in under 5 seconds.
+---
+
+## 📂 Laboratory Experiments Index (Activities 1 to 18)
+
+Every experiment folder contains executable Python scripts (`.py`), exported JSON results (`.json`), MongoDB Compass output screenshots (`.png`), and formal documentation (`.docx`).
+
+| Exp No. | Experiment Title | Folder Link | Core Outcome |
+|:---:|---|---|---|
+| **1** | Why NoSQL? Classification of Modern Databases | [`Activity_1_Submission`](24BTLCL003_Ayush_Yadav_MongoDB_Activity_1_Submission) | Formulated database paradigm matrix & CAP theorem trade-offs |
+| **2** | Environment Setup & Fundamental CRUD | [`Activity_2_Submission`](24BTLCL003_Ayush_Yadav_MongoDB_Activity_2_Submission) | Verified PyMongo connection & multi-document CRUD operations |
+| **3** | Data Model Fundamentals & Schema Validation | [`Activity_3_Submission`](24BTLCL003_Ayush_Yadav_MongoDB_Activity_3_Submission) | Enforced `$jsonSchema` validation on embedded & referenced models |
+| **4** | Advanced CRUD & Query Operators in Python | [`Activity_4_Submission`](24BTLCL003_MongoDB_Activity_4_Submission) | Implemented comparison, logical, element, and regex operators |
+| **5** | Aggregation Framework and Advanced Querying | [`Activity_5_Submission`](24BTLCL003_MongoDB_Activity_5_Submission) | Multi-stage pipelines (`$match`, `$group`, `$sort`, `$project`, `$facet`) |
+| **6** | Indexing Strategies & Query Optimization | [`Activity_6_Submission`](24BTLCL003_MongoDB_Activity_6_Submission) | Single-field, compound, and multikey indexes with `IXSCAN` profiling |
+| **7** | Architecture Deep Dive & Working Set Memory | [`Activity_7_Submission`](24BTLCL003_MongoDB_Activity_7_Submission) | Sized WiredTiger cache memory for hot data retention |
+| **8** | Replication and High Availability | [`Activity_8_Submission`](24BTLCL003_MongoDB_Activity_8_Submission) | 3-node Replica Set with failover & automatic primary election |
+| **9** | CAP Theorem in Practice & Write Concerns | [`Activity_9_Submission`](24BTLCL003_MongoDB_Activity_9_Submission) | Benchmarked `w:1` vs `w:majority` latency & durability trade-offs |
+| **10** | Multi-Document ACID Transactions | [`Activity_10_Submission`](24BTLCL003_MongoDB_Activity_10_Submission) | Client sessions with multi-document atomic commits and rollbacks |
+| **11** | Horizontal Scaling & Sharding | [`Activity_11_Submission`](24BTLCL003_MongoDB_Activity_11_Submission) | Evaluated shard keys, chunk balancing, and zone sharding |
+| **12** | Security & CIA Triad | [`Activity_12_Submission`](24BTLCL003_MongoDB_Activity_12_Submission) | RBAC roles, TLS encryption, and audit logging |
+| **13** | Container & Cloud Deployment | [`Activity_13_Submission`](24BTLCL003_MongoDB_Activity_13_Submission) | Docker Compose container orchestration with persistent volumes |
+| **14** | Production Operations & Diagnostics | [`Activity_14_Submission`](24BTLCL003_MongoDB_Activity_14_Submission) | Captured telemetry using `serverStatus` and slow query profiling |
+| **15** | Multi-Tenant SaaS Architecture | [`Activity_15_Submission`](24BTLCL003_MongoDB_Activity_15_Submission) | Tenant discriminator patterns and schema-level data segregation |
+| **16** | Polyglot Persistence | [`Activity_16_Submission`](24BTLCL003_MongoDB_Activity_16_Submission) | Coordinated MongoDB document store with graph recommendations |
+| **17** | Vector Search & Generative AI (RAG) | [`Activity_17_Submission`](24BTLCL003_MongoDB_Activity_17_Submission) | 384-d vector embeddings, cosine search, and RRF hybrid retrieval |
+| **18** | Comparative Capstone & Synthesis | [`Activity_18_Submission`](24BTLCL003_MongoDB_Activity_18_Submission) | High-throughput financial fraud capstone benchmark with P95/P99 stats |
+| **A** | Appendix A: Full Assessment Submission | [`Appendix_A_Submission`](24BTLCL003_MongoDB_Appendix_A_Submission) | Synthesis of all exercises into RAG chat architecture |
+
+---
+
+### Verification and Integrity
+All exercises and laboratory packages have been verified under Python 3.14 and MongoDB 7.0 / PyMongo.
